@@ -1888,3 +1888,1160 @@
 03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1436 - createGarageTable [1]:
 03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1443 - createGarageTable [3]: Таблица уже существует
 03.11:16.34.08 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:77 - Выбран DB дата провайдер
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.39.20DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.39.22 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:83 - Дата провайдер выбран по умолчанию
+03.11:16.39.22 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:89 - Дата провайдер установлен  DataProviderCSV
+03.11:16.39.22 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.39.22 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:175 - addClient [1]: Список получен, длина = 8
+03.11:16.39.22 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена name=Max, phoneNumber=89547854545, email=xxx@gmail.ru, passport=5012 456783
+03.11:16.39.22 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена name=Max, phoneNumber=89547854545, email=xxx@gmail.ru, passport=5012 456783
+03.11:16.39.23 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.39.23 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.39.23DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.39.23 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:122 - Запись name=Max, phoneNumber=89547854545, email=xxx@gmail.ru, passport=5012 456783 добавлена
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.40.11DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.40.13 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:83 - Дата провайдер выбран по умолчанию
+03.11:16.40.13 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:89 - Дата провайдер установлен  DataProviderCSV
+03.11:16.40.13 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.40.13 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:175 - addClient [1]: Список получен, длина = 9
+03.11:16.40.13ERROR	ru.sfedu.buildingconstruction.api.DataProviderCSV:638 - recordValidation [2]: Запись уже есть name=Max, phoneNumber=89547854545, email=xxx@gmail.ru, passport=5012 456783
+03.11:16.40.13 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.40.13 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.40.14DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.40.14ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:124 - Запись name=Max, phoneNumber=89547854545, email=xxx@gmail.ru, passport=5012 456783 уже создана
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.40.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.40.42 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:83 - Дата провайдер выбран по умолчанию
+03.11:16.40.42 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:89 - Дата провайдер установлен  DataProviderCSV
+03.11:16.40.42ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:22 - Неправильно указан номер
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.40.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.40.54 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:83 - Дата провайдер выбран по умолчанию
+03.11:16.40.54 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:89 - Дата провайдер установлен  DataProviderCSV
+03.11:16.40.54ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:33 - Неправильно указан email
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.47.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:165 - addMaterial [1]: Список получен, длина = 6
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена Material{name=xxx, price=13.0, quantityInStock=244.0}
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена Material{name=xxx, price=13.0, quantityInStock=244.0}
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.47.33DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.47.33 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:152 - Запись Material{name=xxx, price=13.0, quantityInStock=244.0} добавлена
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.48.08DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.48.10 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.48.10 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.48.10 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.48.10 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:165 - addMaterial [1]: Список получен, длина = 7
+03.11:16.48.10ERROR	ru.sfedu.buildingconstruction.api.DataProviderCSV:638 - recordValidation [2]: Запись уже есть Material{name=xxx, price=13.0, quantityInStock=244.0}
+03.11:16.48.10 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.48.10 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.48.11DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.48.11ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:154 - Запись Material{name=xxx, price=13.0, quantityInStock=244.0} уже создана
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.48.37DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.48.39 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.48.39 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.48.39ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:65 - Недопустимое число
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.48.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.48.54 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.48.54 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.48.54ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:55 - Недопустимое число
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.49.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.49.29 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.49.29 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.49.29ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:22 - Неправильно указан номер
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.50.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:145 - addWorker [1]: Список получен, длина = 9
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена Worker{name=Max, phoneNumber=89547854545, jobTitle=xxx, salary=5012.0}
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена Worker{name=Max, phoneNumber=89547854545, jobTitle=xxx, salary=5012.0}
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.50.24 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.50.25DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.50.25 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:182 - Запись Worker{name=Max, phoneNumber=89547854545, jobTitle=xxx, salary=5012.0} добавлена
+03.11:16.50.31DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.50.32DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.50.34 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.50.34 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.50.34ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:22 - Неправильно указан номер
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.50.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.50.40 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.50.40 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.50.41 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.50.41 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:145 - addWorker [1]: Список получен, длина = 10
+03.11:16.50.41ERROR	ru.sfedu.buildingconstruction.api.DataProviderCSV:638 - recordValidation [2]: Запись уже есть Worker{name=Max, phoneNumber=89547854545, jobTitle=xxx, salary=5012.0}
+03.11:16.50.41 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.50.41 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.50.41DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.50.41ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:184 - Запись Worker{name=Max, phoneNumber=89547854545, jobTitle=xxx, salary=5012.0} уже создана
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.50.48DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.50.50 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:84 - Дата провайдер выбран по умолчанию
+03.11:16.50.50 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:90 - Дата провайдер установлен  DataProviderCSV
+03.11:16.50.50ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:55 - Недопустимое число
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.51.26DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:155 - addConstructionEquipment [1]: Список получен, длина = 6
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена ConstructionEquipment{name=xxx, price=7373.0};
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена ConstructionEquipment{name=xxx, price=7373.0};
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.51.28DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.51.28 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:205 - Запись ConstructionEquipment{name=xxx, price=7373.0}; добавлена
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.51.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.51.38 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:16.51.38 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:16.51.38 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:16.51.38 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:155 - addConstructionEquipment [1]: Список получен, длина = 7
+03.11:16.51.38ERROR	ru.sfedu.buildingconstruction.api.DataProviderCSV:638 - recordValidation [2]: Запись уже есть ConstructionEquipment{name=xxx, price=7373.0};
+03.11:16.51.38 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:16.51.38 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.51.39DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.51.39ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:207 - Запись ConstructionEquipment{name=xxx, price=7373.0}; уже создана
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.51.44DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.51.46 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:16.51.46 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:16.51.46ERROR	ru.sfedu.buildingconstruction.util.EntityConfugurationUtil:55 - Недопустимое число
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.51.52DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.51.54 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:16.51.54 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:762 - createAllFiles [1]: количество файлов = 7
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл worker.csv существует
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл material.csv существует
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл client.csv существует
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл house.csv существует
+03.11:17.09.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл garage.csv существует
+03.11:17.09.48 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.09.48 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:762 - createAllFiles [1]: количество файлов = 7
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл worker.csv существует
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл material.csv существует
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл client.csv существует
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл house.csv существует
+03.11:17.09.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл garage.csv существует
+03.11:17.10.01 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.10.01 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:762 - createAllFiles [1]: количество файлов = 7
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл worker.csv существует
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл material.csv существует
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл client.csv существует
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл house.csv существует
+03.11:17.10.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:775 - checkFiles[2]: Файл garage.csv существует
+03.11:17.10.15 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.10.15 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.12.49DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.12.51 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.12.51 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.12.51ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:216 - Данные введены некорректно
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.13.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.13.14 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.13.14 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.15.22DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.15.24 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.15.24 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.15.34DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.15.36 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.15.36 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.15.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.15.48 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.15.48 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.15.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.16.01 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:85 - Дата провайдер выбран по умолчанию
+03.11:17.16.01 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:17.44.58DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:55 - main [1]: данные не были получены
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.45.36DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.45.38 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:87 - Дата провайдер выбран по умолчанию
+03.11:17.45.38 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:17.45.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:17.45.38 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:17.45.38 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:17.45.38DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:17.45.38 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:17.45.38 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:95 - Дата провайдер установлен  DataProviderCSV
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:17.46.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:87 - Дата провайдер выбран по умолчанию
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:17.47.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:17.47.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:17.47.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:17.47.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional.empty
+03.11:17.47.01ERROR	ru.sfedu.buildingconstruction.api.DataProvider:32 - материал не найден
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.03.01DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:182 - addBuilding [1]: class = class ru.sfedu.buildingconstruction.model.House
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.03DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.03 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:480 - addHouse [2]: Список получен, длина = 9
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:55 - ClientCsvConverter [5]: владелец = name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:53 - MaterialCsvConverter [5]: матерал = Material{name=Кирпич, price=12150.0, quantityInStock=14.0}
+03.11:18.03.04DEBUG	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:53 - MaterialCsvConverter [5]: матерал = Material{name=Бетон, price=15054.0, quantityInStock=14.0}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена House{numberOfRooms=22}Building{ square=35.0, nummberOfFloors=4, completionDate=null, owner= {name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890}, materials=[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}, Material{name=Бетон, price=15054.0, quantityInStock=14.0}], engineeringSystems=[SEWERAGE, HEATING], constructionEquipments=null, workers=null}
+03.11:18.03.04 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена House{numberOfRooms=22}Building{ square=35.0, nummberOfFloors=4, completionDate=null, owner= {name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890}, materials=[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}, Material{name=Бетон, price=15054.0, quantityInStock=14.0}], engineeringSystems=[SEWERAGE, HEATING], constructionEquipments=null, workers=null}
+03.11:18.03.05 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:18.03.05 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:18.03.06DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:18.03.06 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:55 - id добавленного здания = 065984bb-8bb3-46dd-87c7-fd9b6f0ad277
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.03.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:182 - addBuilding [1]: class = class ru.sfedu.buildingconstruction.model.House
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 1 = name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 1 = Material{name=Кирпич, price=12150.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.03.59 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.03.59DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 2 = Material{name=Бетон, price=15054.0, quantityInStock=14.0}
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:28 - ConstructionEquipmentCsvConverter [1]: список строительного оборудования пуст
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:28 - WorkerCsvConverter [1]: список работников пуст
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:480 - addHouse [2]: Список получен, длина = 10
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:55 - ClientCsvConverter [5]: владелец = name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:53 - MaterialCsvConverter [5]: матерал = Material{name=Кирпич, price=12150.0, quantityInStock=14.0}
+03.11:18.04.00DEBUG	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:53 - MaterialCsvConverter [5]: матерал = Material{name=Бетон, price=15054.0, quantityInStock=14.0}
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена House{numberOfRooms=22}Building{ square=35.0, nummberOfFloors=4, completionDate=null, owner= {name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890}, materials=[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}, Material{name=Бетон, price=15054.0, quantityInStock=14.0}], engineeringSystems=[SEWERAGE, HEATING], constructionEquipments=null, workers=null}
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена House{numberOfRooms=22}Building{ square=35.0, nummberOfFloors=4, completionDate=null, owner= {name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890}, materials=[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}, Material{name=Бетон, price=15054.0, quantityInStock=14.0}], engineeringSystems=[SEWERAGE, HEATING], constructionEquipments=null, workers=null}
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:18.04.00 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:18.04.01DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:18.04.01 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:55 - id добавленного здания = a349adee-6d2b-429f-b4aa-a30330110e43
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.04.12DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.04.14 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.04.14 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.04.14ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:235 - Данные введены некорректно
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.04.27DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.04.29DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.29DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.29DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.29DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.04.29 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional.empty
+03.11:18.04.29ERROR	ru.sfedu.buildingconstruction.api.DataProvider:31 - материал не найден
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.04.40DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.04.42DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.42DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.42DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.42DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.42DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.04.42 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.04.56DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.04.58DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.04.58DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.04.58 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.06.13DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:182 - addBuilding [1]: class = class ru.sfedu.buildingconstruction.model.House
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.15 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 21 = name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional[name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:41 - ClientCsvConverter [2]: владелец c id = 1 = name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 21 = Material{name=ЛДСП, price=750.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 1 = Material{name=Кирпич, price=12150.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:321 - getConstructionEquipment [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:323 - getConstructionEquipment [2]: optional = Optional[ConstructionEquipment{name=Грейдер, price=18000.0};]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:38 - ConstructionEquipmentCsvConverter [2]: строительное оборудование c id = 21 = ConstructionEquipment{name=Грейдер, price=18000.0};
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:299 - getMaterial [1]: Список получен, длина = 6
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:301 - getMaterial [2]: optional = Optional[Material{name=Бетон, price=15054.0, quantityInStock=14.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:39 - MaterialConverter [2]: материал c id = 2 = Material{name=Бетон, price=15054.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.model.ConstructionEquipmentCsvConverter:28 - ConstructionEquipmentCsvConverter [1]: список строительного оборудования пуст
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:28 - WorkerCsvConverter [1]: список работников пуст
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:310 - getWorker [1]: Список получен, длина = 9
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:312 - getWorker [2]: optional = Optional[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.WorkerCsvConverter:38 - WorkerCsvConverter [2]: работник c id = 21 = Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:480 - addHouse [2]: Список получен, длина = 10
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.model.ClientCsvConverter:55 - ClientCsvConverter [5]: владелец = name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:53 - MaterialCsvConverter [5]: матерал = Material{name=Кирпич, price=12150.0, quantityInStock=14.0}
+03.11:18.06.16DEBUG	ru.sfedu.buildingconstruction.model.MaterialCsvConverter:53 - MaterialCsvConverter [5]: матерал = Material{name=Бетон, price=15054.0, quantityInStock=14.0}
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:671 - serialize [1]: Запись добавлена House{numberOfRooms=22}Building{ square=35.0, nummberOfFloors=4, completionDate=null, owner= {name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890}, materials=[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}, Material{name=Бетон, price=15054.0, quantityInStock=14.0}], engineeringSystems=null, constructionEquipments=null, workers=null}
+03.11:18.06.16 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:635 - recordValidation [1]: Запись добавлена House{numberOfRooms=22}Building{ square=35.0, nummberOfFloors=4, completionDate=null, owner= {name=Максим, phoneNumber=89757345627, email=mail.ner@mail.ru, passport=1234567890}, materials=[Material{name=Кирпич, price=12150.0, quantityInStock=14.0}, Material{name=Бетон, price=15054.0, quantityInStock=14.0}], engineeringSystems=null, constructionEquipments=null, workers=null}
+03.11:18.06.17 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
+03.11:18.06.17 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:18.06.17DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:18.06.17 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:55 - id добавленного здания = 9e89e003-9ffd-4c44-bba1-0ed1b7aba6b4
