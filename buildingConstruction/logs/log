@@ -1852,3 +1852,39 @@
 03.11:15.37.20ERROR	ru.sfedu.buildingconstruction.api.DataProviderCSV:638 - recordValidation [2]: Запись уже есть House{numberOfRooms=7}Building{ square=58.0, nummberOfFloors=2, completionDate=2024-03-16, owner= {name=Сергей, phoneNumber=875469873456, email=cbfhdbvjfi@mail.ru, passport=7658673495}, materials=[Material{name=ЛДСП, price=750.0, quantityInStock=14.0}], engineeringSystems=[HEATING, ELECTRICITY, SEWERAGE], constructionEquipments=[ConstructionEquipment{name=Грейдер, price=18000.0};], workers=[Worker{name=Aleksey, phoneNumber=+78949349322, jobTitle=Строитель, salary=63000.0}]}
 03.11:15.37.20 INFO	ru.sfedu.buildingconstruction.api.MongoProvider:44 - createHistoryContent [2]: HistoryContent создан
 03.11:15.37.20DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
+03.11:16.30.48DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:42 - DataBaseProvider [0]:starting application.....
+03.11:16.30.48DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1156 - dataBaseConnection [1]:
+03.11:16.30.48 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.30.49 INFO	ru.sfedu.buildingconstruction.api.DataBaseProvider:1162 - dataBaseConnection [2]: Соединение успешно
+03.11:16.30.49DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:49 - main [1]: данные не были получены
+03.11:16.31.58DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:49 - main [1]: данные не были получены
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:16.32.53DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:16.32.55 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:83 - Дата провайдер выбран по умолчанию
+03.11:16.34.05DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:42 - DataBaseProvider [0]:starting application.....
+03.11:16.34.05DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1156 - dataBaseConnection [1]:
+03.11:16.34.05 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
+03.11:16.34.06 INFO	ru.sfedu.buildingconstruction.api.DataBaseProvider:1162 - dataBaseConnection [2]: Соединение успешно
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1322 - createAllTables [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1339 - createWorkerTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1346 - createWorkerTable [3]: Таблица уже существует
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1356 - createConstructioEquipmentTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1363 - createConstructioEquipmentTable [3]: Таблица уже существует
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1372 - createMaterialTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1379 - createMaterialTable [3]: Таблица уже существует
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1388 - createClientTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1395 - createClientTable [3]: Таблица уже существует
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1404 - createApartmentHouseTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1411 - createApartmentHouseTable [3]: Таблица уже существует
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1420 - createHouseTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1427 - createHouseTable [3]: Таблица уже существует
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1436 - createGarageTable [1]:
+03.11:16.34.06DEBUG	ru.sfedu.buildingconstruction.api.DataBaseProvider:1443 - createGarageTable [3]: Таблица уже существует
+03.11:16.34.08 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:77 - Выбран DB дата провайдер

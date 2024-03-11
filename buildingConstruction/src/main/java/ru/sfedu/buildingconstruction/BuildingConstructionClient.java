@@ -42,7 +42,11 @@ public class BuildingConstructionClient {
 
     public static void main(String[] args) throws Exception {
         
-        DataProvider provider = new DataBaseProvider();
+        DataProvider provider;
+        
+        String [] x = {"DB"};
+        
+        args = x;
         
 
         if (args.length == 0) {
@@ -58,20 +62,25 @@ public class BuildingConstructionClient {
             case "CSV" -> {
                 provider = new DataProviderCSV();
                 arguments = Arrays.copyOfRange(args, 1, args.length);
+                log.info("Выбран CSV дата провайдер");
             }
             case "XML" -> {
                 provider = new DataProviderXML();
                 arguments = Arrays.copyOfRange(args, 1, args.length);
                 ((DataProviderXML) provider).createAllFiles();
+                log.info("Выбран XML дата провайдер");
             }
-            case "BD" -> {
+            case "DB" -> {
                 provider = new DataBaseProvider();
-                args[0] = null;
+                arguments = Arrays.copyOfRange(args, 1, args.length);
+                ((DataBaseProvider) provider).createAllTables();
+                log.info("Выбран DB дата провайдер");
+                
             }
             default -> {
                 provider = new DataProviderCSV();
                 ((DataProviderCSV) provider).createAllFiles();
-                log.info("дата провайдер выбран по умолчанию");
+                log.info("Дата провайдер выбран по умолчанию");
                 arguments = args;
             }
         }
