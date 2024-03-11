@@ -44,7 +44,7 @@ public class BuildingConstructionClient {
 
         DataProvider provider;
 
-        String [] x = {"-plan", "House", "35", "4", "22", "1", "1 2"};
+        String [] x = {"-plan", "House", "35", "4", "22", "121313", "1 2"};
 //        String [] x = {"-worker", "12345g", "Max", "xxx", "89547854545", "-5012"};
 //        String [] x = {"-equipment", "12345g", "xxx", "-7373"};
 //        String [] x = {"-plan", "12345g", "xxx", "-7373"};
@@ -244,6 +244,7 @@ public class BuildingConstructionClient {
 
                 if (provider.getClient(arguments[5]).isEmpty()) {
                     log.error("Клиент не найден");
+                    return;
                 }
                 Client client = (Client) provider.getClient(arguments[5]).get();
 

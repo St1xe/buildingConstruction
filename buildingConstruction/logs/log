@@ -3045,3 +3045,38 @@
 03.11:18.06.17 INFO	ru.sfedu.buildingconstruction.util.ConfigurationUtil:54 - loadConfiguration [1]: ConfigPath = environment.properties
 03.11:18.06.17DEBUG	ru.sfedu.buildingconstruction.api.MongoProvider:70 - addHistoryRecordInMongoDB [2]: запись добавлена
 03.11:18.06.17 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:55 - id добавленного здания = 9e89e003-9ffd-4c44-bba1-0ed1b7aba6b4
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.11.43DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.11.45 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.11.45 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.11.45DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.11.45 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.11.45DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.11.45 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional.empty
+03.11:18.11.45ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:246 - Клиент не найден
+03.11:18.11.46 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.11.46DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.11.46 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional.empty
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:44 - DataProviderCSV [0]:starting application.....
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:759 - createAllFiles [1]: количество файлов = 7
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл worker.csv существует
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл material.csv существует
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл constructionEquipment.csv существует
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл client.csv существует
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл apartmentHouse.csv существует
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл house.csv существует
+03.11:18.12.15DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:772 - checkFiles[2]: Файл garage.csv существует
+03.11:18.12.17 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:86 - Дата провайдер выбран по умолчанию
+03.11:18.12.17 INFO	ru.sfedu.buildingconstruction.BuildingConstructionClient:91 - Дата провайдер установлен  DataProviderCSV
+03.11:18.12.17DEBUG	ru.sfedu.buildingconstruction.BuildingConstructionClient:240 - class ru.sfedu.buildingconstruction.model.House
+03.11:18.12.18 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:728 - deserialize [1]: список получен
+03.11:18.12.18DEBUG	ru.sfedu.buildingconstruction.api.DataProviderCSV:332 - getClient [1]: Список получен, длина = 8
+03.11:18.12.18 INFO	ru.sfedu.buildingconstruction.api.DataProviderCSV:334 - getClient [2]: optional = Optional.empty
+03.11:18.12.18ERROR	ru.sfedu.buildingconstruction.BuildingConstructionClient:246 - Клиент не найден
