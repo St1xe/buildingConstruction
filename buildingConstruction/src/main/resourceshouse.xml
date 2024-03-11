@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapperXML>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>6</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>4</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>7</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>8</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>10</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>2</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>11</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>5</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>4</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>11</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>5</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>8</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>9</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>6</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>1</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>3</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>2</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfRooms>7</numberOfRooms>
+    </wrapper>
+</wrapperXML>

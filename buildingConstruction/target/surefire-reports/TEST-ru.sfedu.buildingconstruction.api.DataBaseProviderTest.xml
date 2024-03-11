@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="7.468" tests="81" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/test-classes:/home/maksim/NewStudies/AIS/building/buildingConstruction/target/classes:/home/maksim/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/home/maksim/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/maksim/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/maksim/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar:/home/maksim/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/maksim/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/maksim/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/maksim/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/maksim/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar:/home/maksim/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar:/home/maksim/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar:/home/maksim/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/maksim/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/maksim/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/maksim/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/maksim/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/maksim/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/maksim/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/maksim/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/maksim/.m2/repository/org/mongodb/mongo-java-driver/3.12.14/mongo-java-driver-3.12.14.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.16.0/jackson-datatype-jdk8-2.16.0.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="Unknown"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire/surefirebooter11572853151735938365.jar /home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire 2024-03-11T15-36-21_783-jvmRun1 surefire5524418749833508238tmp surefire_0409559562281590574tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/test-classes:/home/maksim/NewStudies/AIS/building/buildingConstruction/target/classes:/home/maksim/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/home/maksim/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/maksim/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/maksim/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar:/home/maksim/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/maksim/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/maksim/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/maksim/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/maksim/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar:/home/maksim/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar:/home/maksim/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar:/home/maksim/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/maksim/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/maksim/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/maksim/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/maksim/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/maksim/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/maksim/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/maksim/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/maksim/.m2/repository/org/mongodb/mongo-java-driver/3.12.14/mongo-java-driver-3.12.14.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.16.0/jackson-datatype-jdk8-2.16.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/maksim"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/maksim/NewStudies/AIS/building/buildingConstruction"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire/surefirebooter11572853151735938365.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+7-Ubuntu-122.04.1"/>
+    <property name="user.name" value="maksim"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.5.0-21-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/usr/lib/apache-netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/maksim/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="/home/maksim/NewStudies/AIS/building/buildingConstruction"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="17.0.10+7-Ubuntu-122.04.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testGetGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.107"/>
+  <testcase name="testUpdateClientNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.035"/>
+  <testcase name="testDeleteGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.086"/>
+  <testcase name="testUpdateApartmentHouseToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.169"/>
+  <testcase name="testUpdateMaterialToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.119"/>
+  <testcase name="testDeleteGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.018"/>
+  <testcase name="testAddConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.056"/>
+  <testcase name="testUpdateApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.122"/>
+  <testcase name="testAddApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.074"/>
+  <testcase name="testGetMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.032"/>
+  <testcase name="testAddConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.074"/>
+  <testcase name="testUpdateApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.052"/>
+  <testcase name="testGetClientPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.058"/>
+  <testcase name="testAddApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.11"/>
+  <testcase name="testUpdateConstructionEquipmentToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.076"/>
+  <testcase name="testGetMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.033"/>
+  <testcase name="testGetClientNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.094"/>
+  <testcase name="testDeleteClientPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.091"/>
+  <testcase name="testAddWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.028"/>
+  <testcase name="testDeleteBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.004"/>
+  <testcase name="testDeleteClientNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.007"/>
+  <testcase name="testGetAllWorkerRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.131"/>
+  <testcase name="testUpdateBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.004"/>
+  <testcase name="testAddWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.078"/>
+  <testcase name="testGetAllWorkerRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.011"/>
+  <testcase name="testGetAllGarageRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.112"/>
+  <testcase name="testGetAllMaterialRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.106"/>
+  <testcase name="testGetAllClientRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.118"/>
+  <testcase name="testGetAllGarageRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.005"/>
+  <testcase name="testGetAllMaterialRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.007"/>
+  <testcase name="testDeleteConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.035"/>
+  <testcase name="testGetAllClientRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.006"/>
+  <testcase name="testGetAllConstructionEquipmentsRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.006"/>
+  <testcase name="testDeleteConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.005"/>
+  <testcase name="testGetBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.006"/>
+  <testcase name="testGetAllConstructionEquipmentRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.092"/>
+  <testcase name="testGetAllHouseRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.12"/>
+  <testcase name="testGetConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.048"/>
+  <testcase name="testUpdateWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.082"/>
+  <testcase name="testGetAllHouseRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.007"/>
+  <testcase name="testGetConstructionEquiomentPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.029"/>
+  <testcase name="testAddMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.035"/>
+  <testcase name="testUpdateWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.024"/>
+  <testcase name="testAddMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.046"/>
+  <testcase name="testGetWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.024"/>
+  <testcase name="testGetAllApartmentHouseRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.148"/>
+  <testcase name="testAddGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.066"/>
+  <testcase name="testUpdateWorkerToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.072"/>
+  <testcase name="testGetWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.045"/>
+  <testcase name="testDeleteWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.034"/>
+  <testcase name="testGetAllApartmentHouseRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.006"/>
+  <testcase name="testAddGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.056"/>
+  <testcase name="testDeleteWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.005"/>
+  <testcase name="testUpdateHouseToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.104"/>
+  <testcase name="testUpdateGarageToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.084"/>
+  <testcase name="testUpdateConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.045"/>
+  <testcase name="testGetHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.072"/>
+  <testcase name="testAddClientPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.048"/>
+  <testcase name="testUpdateConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.025"/>
+  <testcase name="testDeleteApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.062"/>
+  <testcase name="testDeleteHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.147"/>
+  <testcase name="testAddBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.006"/>
+  <testcase name="testGetHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.062"/>
+  <testcase name="testAddClientNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.076"/>
+  <testcase name="testUpdateClientToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.075"/>
+  <testcase name="testDeleteApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.009"/>
+  <testcase name="testDeleteHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.014"/>
+  <testcase name="testUpdateHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.076"/>
+  <testcase name="testGetApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.04"/>
+  <testcase name="testUpdateGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.069"/>
+  <testcase name="testUpdateHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.029"/>
+  <testcase name="testGetApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.05"/>
+  <testcase name="testUpdateGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.028"/>
+  <testcase name="testDeleteMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.032"/>
+  <testcase name="testUpdateMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.043"/>
+  <testcase name="testAddHousePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.044"/>
+  <testcase name="testDeleteMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.005"/>
+  <testcase name="testGetGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.071"/>
+  <testcase name="testUpdateClientPositive" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.043"/>
+  <testcase name="testUpdateMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.021"/>
+  <testcase name="testAddHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataBaseProviderTest" time="0.052"/>
+</testsuite>

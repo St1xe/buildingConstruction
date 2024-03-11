@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapperXML>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>6</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>4</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>7</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>8</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>10</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>2</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>11</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>5</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>4</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>11</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>5</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>8</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>9</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>6</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>1</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>3</numberOfRooms>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="house">
+        <id>2</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfRooms>7</numberOfRooms>
+    </wrapper>
+</wrapperXML>

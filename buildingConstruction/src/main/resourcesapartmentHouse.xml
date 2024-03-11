@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapperXML>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="apartmentHouse">
+        <id>6</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfApartments>7</numberOfApartments>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="apartmentHouse">
+        <id>7</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfApartments>5</numberOfApartments>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="apartmentHouse">
+        <id>4</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfApartments>26</numberOfApartments>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="apartmentHouse">
+        <id>5</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <ownerId>1</ownerId>
+        <materialsId>1 2 3</materialsId>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipmentsId>1 2</constructionEquipmentsId>
+        <workersId>4 7</workersId>
+        <numberOfApartments>3</numberOfApartments>
+    </wrapper>
+</wrapperXML>

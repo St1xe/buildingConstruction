@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapperXML>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>6</id>
+        <name>Брус</name>
+        <price>1750.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>7</id>
+        <name>SIP</name>
+        <price>15430.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>21</id>
+        <name>ЛДСП</name>
+        <price>750.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>1</id>
+        <name>Кирпич</name>
+        <price>12150.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>2</id>
+        <name>Бетон</name>
+        <price>15054.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>9</id>
+        <name>Лафет</name>
+        <price>1540.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+</wrapperXML>

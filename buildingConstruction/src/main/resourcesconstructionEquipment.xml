@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapperXML>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>6</id>
+        <name>Башенный кран</name>
+        <price>646.0</price>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>7</id>
+        <name>Асфальтоукладчик</name>
+        <price>422.0</price>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>5</id>
+        <name>Бетономешалка</name>
+        <price>3124.0</price>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>4</id>
+        <name>Погрузчик</name>
+        <price>313212.0</price>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>9</id>
+        <name>Самосвал</name>
+        <price>3535.0</price>
+    </wrapper>
+</wrapperXML>

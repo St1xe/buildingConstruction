@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapperXML>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>6</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>3</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>7</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>4</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>1</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>1</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>2</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>2</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>10</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>1</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>11</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>2</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>9</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>7</numberOfCars>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="garage">
+        <id>4</id>
+        <square>58.0</square>
+        <numberOfFloors>2</numberOfFloors>
+        <completionDate>20240316</completionDate>
+        <owner>21</owner>
+        <materials>21/</materials>
+        <engineeringSystems>HEATING ELECTRICITY SEWERAGE</engineeringSystems>
+        <constructionEquipments>21/</constructionEquipments>
+        <workers>21/</workers>
+        <numberOfCars>5</numberOfCars>
+    </wrapper>
+</wrapperXML>
