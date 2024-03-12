@@ -59,48 +59,13 @@ public class DataProviderCSV implements DataProvider {
     @Override
     public void preparationForBuilding(Building building) {
 
-        List<Worker> workers = new ArrayList<>();
-        List<ConstructionEquipment> equipments = new ArrayList<>();
+        List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_WORKER_CSV_FILE);
+        List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE);
+        LocalDate date = coordinationOfConstructionTerms(building);
 
-        try {
-            workers = getAllRecords(Worker.class, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
-        } catch (IOException ex) {
-            ex.getMessage();
-            System.exit(0);
-        }
 
-        try {
-            equipments = getAllRecords(ConstructionEquipment.class, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
-        } catch (IOException ex) {
-            ex.getMessage();
-            System.exit(0);
-        }
-
-        int coefficient = 0;
-        LocalDate date = LocalDate.now();
-
-        switch (building.getClass().getSimpleName()) {
-
-            case "ApartmentHouse" -> {
-                coefficient = 10;
-                date = LocalDate.now().plusMonths(6);
-            }
-            case "House" -> {
-                coefficient = 20;
-                date = LocalDate.now().plusYears(3);
-            }
-            case "Garage" -> {
-                coefficient = 5;
-                date = LocalDate.now().plusDays(15);
-            }
-
-        }
-
-        List<Worker> w = workers.stream().limit(coefficient / 5).toList();
-        List<ConstructionEquipment> ce = equipments.stream().limit(coefficient / 5).toList();
-
-        building.setWorkers(w);
-        building.setConstructionEquipments(ce);
+        building.setWorkers(workers);
+        building.setConstructionEquipments(equipments);
         building.setCompletionDate(date);
 
         try {
@@ -112,11 +77,6 @@ public class DataProviderCSV implements DataProvider {
 
     }
 
-    
-
-    
-
-    
     
     @Override
     public void calculationOfTheTotalCost(Building building) {
