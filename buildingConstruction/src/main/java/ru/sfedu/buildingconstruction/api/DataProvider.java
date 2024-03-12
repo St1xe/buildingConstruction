@@ -8,6 +8,7 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 import ru.sfedu.buildingconstruction.model.*;
 import org.apache.log4j.Logger;
+import ru.sfedu.buildingconstruction.Constants;
 
 /**
  *
@@ -52,9 +53,69 @@ public interface DataProvider {
 
     public void preparationForBuilding(Building building);
 
-    public  List<Worker> distributionOfWorkers(Building building);
+    public default List<Worker> distributionOfWorkers(Building building, String path) {
+
+        List<Worker> list = new ArrayList<>();
+
+        int countOfWorkers = 0;
+
+        if (building instanceof ApartmentHouse) {
+            countOfWorkers = Constants.PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE;
+            
+        } else if (building instanceof House) {
+            countOfWorkers = Constants.PEOPLE_FOR_BUILD_A_HOUSE;
+
+        } else if (building instanceof Garage) {
+            countOfWorkers = Constants.PEOPLE_FOR_BUILD_A_GARAGE;
+
+        }
+
+        try {
+
+            getAllRecords(Worker.class, Constants.PATH_TO_RESOURCES.concat(path))
+                    .stream()
+                    .limit(countOfWorkers)
+                    .map(el -> (Worker) el)
+                    .forEach(el -> list.add(el));
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        return list;
+    }
     
-    public  List<ConstructionEquipment> distributionOfConstructionEquipment(Building building);
+    public default List<ConstructionEquipment> distributionOfConstructionEquipment(Building building, String path) {
+        
+        List<ConstructionEquipment> list = new ArrayList<>();
+
+        int numberOfEquipments = 0;
+
+        if (building instanceof ApartmentHouse) {
+            numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_AN_APARTMENT_HOUSE;
+            
+        } else if (building instanceof House) {
+            numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_A_HOUSE;
+
+        } else if (building instanceof Garage) {
+            numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_A_GARAGE;
+
+        }
+
+        try {
+
+            getAllRecords(ConstructionEquipment.class, Constants.PATH_TO_RESOURCES.concat(path))
+                    .stream()
+                    .limit(numberOfEquipments)
+                    .map(el -> (ConstructionEquipment) el)
+                    .forEach(el -> list.add(el));
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        return list;
+    }
     
     public void calculationOfTheTotalCost(Building building);
     

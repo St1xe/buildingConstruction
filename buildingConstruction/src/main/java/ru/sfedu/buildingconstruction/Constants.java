@@ -21,6 +21,10 @@ public class Constants {
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_A_HOUSE = 7;
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_AN_APARTMENT_HOUSE = 15;
     
+    public static final int TIME_IN_MONTH_FOR_BUILD_AN_APARTMENT_HOUSE = 18;
+    public static final int TIME_IN_MONTH_FOR_BUILD_A_HOUSE = 6;
+    public static final int TIME_IN_MONTH_FOR_BUILD_A_GARAGE = 3;
+    
     public static final String MONGO_ID = "id";
     public static final String MONGO_CLASS_NAME = "className";
     public static final String MONGO_CREATED_DATA = "createdData";
