@@ -81,23 +81,25 @@ public class DataProviderCSV implements DataProvider {
     @Override
     public void calculationOfTheTotalCost(Building building) {
 
-        long sum = 0l;
-
-        switch (building.getClass().getSimpleName()) {
-
-            case "ApartmentHouse" -> {
-                sum = Constants.PRICE_TO_BUILD_AN_APARTMENT_HOUSE;
-            }
-            case "House" -> {
-                sum = Constants.PRICE_TO_BUILD_A_HOUSE;
-            }
-            case "Garage" -> {
-                sum = Constants.PRICE_TO_BUILD_A_GARAGE;
-            }
-
-        }
-
-        log.info("Стоимотсь постройки дома = " + sum);
+//        long sum = 0l;
+//
+//        switch (building.getClass().getSimpleName()) {
+//
+//            case "ApartmentHouse" -> {
+//                sum = Constants.PRICE_TO_BUILD_AN_APARTMENT_HOUSE;
+//            }
+//            case "House" -> {
+//                sum = Constants.PRICE_TO_BUILD_A_HOUSE;
+//            }
+//            case "Garage" -> {
+//                sum = Constants.PRICE_TO_BUILD_A_GARAGE;
+//            }
+//
+//        }
+//
+//        log.info("Стоимотсь постройки дома = " + sum);
+    
+        log.info(calculationCostOfMaterials(building, Constants.PATH_TO_MATERIAL_CSV_FILE));
 
     }
 

@@ -45,7 +45,8 @@ public class BuildingConstructionClient {
         DataProvider provider;
 
 //        String[] x = {"-plan", "House", "35", "4", "22", "1", "1 2"};
-        String[] x = {"-build", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
+//        String[] x = {"-build", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
+        String[] x = {"-cost", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
 
 //        String [] x = {"-worker", "12345g", "Max", "xxx", "89547854545", "-5012"};
 //        String [] x = {"-equipment", "12345g", "xxx", "-7373"};
@@ -311,61 +312,61 @@ public class BuildingConstructionClient {
                 provider.preparationForBuilding(building);
 
             }
+        
+            case "-cost" -> {
+            
+                if (arguments.length < 3) {
+                    log.error("Данные введены некорректно");
+                    return;
+                }
+                
+                Building building;
+                
+                
+                switch (arguments[2]) {
+
+                    case "ApartmentHouse" -> {
+
+                        if (provider.getBuilding(arguments[1], ApartmentHouse.class).isEmpty()) {
+                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            System.exit(0);
+                        }
+
+                        building = provider.getBuilding(arguments[1], ApartmentHouse.class).get();
+
+                    }
+                    case "House" -> {
+                        if (provider.getBuilding(arguments[1], House.class).isEmpty()) {
+                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            System.exit(0);
+                        }
+
+                        building = provider.getBuilding(arguments[1], House.class).get();
+                    }
+                    case "Garage" -> {
+                        if (provider.getBuilding(arguments[1], Garage.class).isEmpty()) {
+                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            System.exit(0);
+                        }
+
+                        building = provider.getBuilding(arguments[1], Garage.class).get();
+                    }
+                    default -> {
+                        log.error("Данные введены некорректно");
+                        return;
+                    }
+
+                }
+                
+                
+            provider.calculationOfTheTotalCost(building);
+                
+            }
+            default -> {
+                log.error("Команда не найдена");
+                return;
+            }
         }
-//            case "-cost" -> {
-//            
-//                if (arguments.length < 3) {
-//                    log.error("Данные введены некорректно");
-//                    return;
-//                }
-//                
-//                Building building;
-//                
-//                
-//                switch (arguments[2]) {
-//
-//                    case "ApartmentHouse" -> {
-//
-//                        if (provider.getBuilding(arguments[1], ApartmentHouse.class).isEmpty()) {
-//                            log.error("Здание с id = " + arguments[1] + " не найдено");
-//                            System.exit(0);
-//                        }
-//
-//                        building = provider.getBuilding(arguments[1], ApartmentHouse.class).get();
-//
-//                    }
-//                    case "House" -> {
-//                        if (provider.getBuilding(arguments[1], House.class).isEmpty()) {
-//                            log.error("Здание с id = " + arguments[1] + " не найдено");
-//                            System.exit(0);
-//                        }
-//
-//                        building = provider.getBuilding(arguments[1], House.class).get();
-//                    }
-//                    case "Garage" -> {
-//                        if (provider.getBuilding(arguments[1], Garage.class).isEmpty()) {
-//                            log.error("Здание с id = " + arguments[1] + " не найдено");
-//                            System.exit(0);
-//                        }
-//
-//                        building = provider.getBuilding(arguments[1], Garage.class).get();
-//                    }
-//                    default -> {
-//                        log.error("Данные введены некорректно");
-//                        return;
-//                    }
-//
-//                }
-//                
-//                
-//            provider.calculationOfTheTotalCost(building);
-//                
-//            }
-//            default -> {
-//                log.error("Команда не найдена");
-//                return;
-//            }
-//        }
 
                 }
             }

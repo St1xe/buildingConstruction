@@ -141,7 +141,24 @@ public interface DataProvider {
     
 
     public void calculationOfTheTotalCost(Building building);
+    
+    public default double calculationCostOfMaterials(Building building, String pathToMaterial) {
+        
+        double sum = 0;
+        
+        List<Material> materials = building.getMaterials();
 
+        sum = materials.stream()
+                .reduce(0.0, 
+                        (accumulator, el) -> accumulator + el.getPrice() * el.getQuantityInStock(),
+                        (accumulator, el) -> accumulator + el);
+         
+        
+        return sum;
+        
+    }
+
+    
     public void addWorker(Worker worker) throws IOException;
 
     public void addConstructionEquipment(ConstructionEquipment constructionEquipment) throws IOException;
