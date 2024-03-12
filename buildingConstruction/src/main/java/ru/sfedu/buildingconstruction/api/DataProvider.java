@@ -138,7 +138,52 @@ public interface DataProvider {
         return date;
     }
 
-    public void calculationOfTheTotalCost(Building building);
+    public default void calculationOfTheTotalCost(Building building) {
+
+        int time = 0;
+        double sum = 0;
+
+        switch (building.getClass().getSimpleName()) {
+
+            case "ApartmentHouse" -> {
+                time = Constants.TIME_IN_MONTH_FOR_BUILD_AN_APARTMENT_HOUSE;
+            }
+            case "House" -> {
+                time = Constants.TIME_IN_MONTH_FOR_BUILD_A_HOUSE;
+                sum = 0.2;
+            }
+            case "Garage" -> {
+                time = Constants.TIME_IN_MONTH_FOR_BUILD_A_GARAGE;
+                sum = 0.1;
+            }
+
+        }
+
+        sum *= calculationCostOfMaterials(building);
+        sum += calculationCostOfConstructionEquipment(building, time);
+        sum += calculationCostOfJob(building, time);
+        
+        
+        if(building.getSquare() > 300) {
+            sum *= 1.5;
+        } else if(building.getSquare() > 200) {
+            sum *= 1.2;
+        } else if (building.getSquare() > 100) {
+            sum *= 1.1;
+        }
+        
+        if(building.getNumberOfFloors()> 3) {
+            sum *= 1.5;
+        } else if(building.getNumberOfFloors()> 2) {
+            sum *= 1.2;
+        } else if (building.getNumberOfFloors()> 1) {
+            sum *= 1.1;
+        }
+        
+        sum *= 1.2;
+        
+        log.info("Стоимотсь постройки здания = " + sum);
+    }
 
     public default double calculationCostOfMaterials(Building building) {
 
@@ -151,6 +196,7 @@ public interface DataProvider {
                         (accumulator, el) -> accumulator + el.getPrice() * el.getQuantityInStock(),
                         (accumulator, el) -> accumulator + el);
 
+        log.info("calculationCostOfMaterials [1]: sum = " + sum);
         return sum;
 
     }
@@ -166,6 +212,7 @@ public interface DataProvider {
                         (accumulator, el) -> accumulator + el.getPrice() * time * 10,
                         (accumulator, el) -> accumulator + el);
 
+        log.info("calculationCostOfConstructionEquipment [1]: sum = " + sum);
         return sum;
 
     }
@@ -180,8 +227,15 @@ public interface DataProvider {
                         (accumulator, el) -> accumulator + el.getSalary() * time,
                         (accumulator, el) -> accumulator + el);
 
+        log.info("calculationCostOfJob [1]: sum = " + sum);
         return sum;
     }
+    
+    
+    
+    
+    
+    
     
     public void addWorker(Worker worker) throws IOException;
 

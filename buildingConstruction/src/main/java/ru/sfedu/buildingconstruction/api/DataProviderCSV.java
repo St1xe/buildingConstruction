@@ -63,7 +63,6 @@ public class DataProviderCSV implements DataProvider {
         List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE);
         LocalDate date = coordinationOfConstructionTerms(building);
 
-
         building.setWorkers(workers);
         building.setConstructionEquipments(equipments);
         building.setCompletionDate(date);
@@ -78,32 +77,6 @@ public class DataProviderCSV implements DataProvider {
     }
 
     
-    @Override
-    public void calculationOfTheTotalCost(Building building) {
-
-//        long sum = 0l;
-//
-//        switch (building.getClass().getSimpleName()) {
-//
-//            case "ApartmentHouse" -> {
-//                sum = Constants.PRICE_TO_BUILD_AN_APARTMENT_HOUSE;
-//            }
-//            case "House" -> {
-//                sum = Constants.PRICE_TO_BUILD_A_HOUSE;
-//            }
-//            case "Garage" -> {
-//                sum = Constants.PRICE_TO_BUILD_A_GARAGE;
-//            }
-//
-//        }
-//
-//        log.info("Стоимотсь постройки дома = " + sum);
-    
-//        log.info(calculationCostOfMaterials(building, Constants.PATH_TO_MATERIAL_CSV_FILE));
-//        log.info(calculationCostOfConstructionEquipment(building, Constants.PATH_TO_MATERIAL_CSV_FILE, Constants.TIME_IN_MONTH_FOR_BUILD_A_HOUSE));
-        log.info(calculationCostOfJob(building, Constants.TIME_IN_MONTH_FOR_BUILD_A_HOUSE));
-
-    }
 
     @Override
     public void addWorker(Worker worker) throws IOException {

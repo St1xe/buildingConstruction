@@ -15,7 +15,7 @@ public class Constants {
     
     public static final int PEOPLE_FOR_BUILD_A_GARAGE = 4;
     public static final int PEOPLE_FOR_BUILD_A_HOUSE = 6;
-    public static final int PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE = 20;
+    public static final int PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE = 30;
     
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_A_GARAGE = 5;
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_A_HOUSE = 7;
@@ -71,9 +71,9 @@ public class Constants {
     public static final String REGEX_TO_CHECK_EMAIL = "((\\w)|(\\.)|(\\-))+\\@[a-z]+\\.[a-z]+";
     public static final String REGEX_TO_CHECK_PASSPORT = "\\d{4}\\s?\\d{6}";
     
-    public static final long PRICE_TO_BUILD_A_HOUSE = 6_700_700;
-    public static final long PRICE_TO_BUILD_AN_APARTMENT_HOUSE = 325_000_000;
-    public static final long PRICE_TO_BUILD_A_GARAGE = 1_220_000;
+//    public static final long PRICE_TO_BUILD_A_HOUSE = 6_700_700;
+//    public static final long PRICE_TO_BUILD_AN_APARTMENT_HOUSE = 325_000_000;
+//    public static final long PRICE_TO_BUILD_A_GARAGE = 1_220_000;
 
     public static final String PATH_TO_WORKER_CSV_FILE = "worker.csv";
     public static final String PATH_TO_MATERIAL_CSV_FILE = "material.csv";
