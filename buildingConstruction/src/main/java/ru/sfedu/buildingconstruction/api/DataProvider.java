@@ -54,6 +54,8 @@ public interface DataProvider {
 
     public  List<Worker> distributionOfWorkers(Building building);
     
+    public  List<ConstructionEquipment> distributionOfConstructionEquipment(Building building);
+    
     public void calculationOfTheTotalCost(Building building);
     
     public void addWorker(Worker worker) throws IOException;

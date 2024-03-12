@@ -146,6 +146,41 @@ public class DataProviderCSV implements DataProvider {
     }
 
     @Override
+    public List<ConstructionEquipment> distributionOfConstructionEquipment(Building building) {
+        
+        List<ConstructionEquipment> list = new ArrayList<>();
+
+        int numberOfEquipments = 0;
+
+        if (building instanceof ApartmentHouse) {
+            numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_AN_APARTMENT_HOUSE;
+            
+        } else if (building instanceof House) {
+            numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_A_HOUSE;
+
+        } else if (building instanceof Garage) {
+            numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_A_GARAGE;
+
+        }
+
+        try {
+
+            getAllRecords(ConstructionEquipment.class, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE))
+                    .stream()
+                    .limit(numberOfEquipments)
+                    .map(el -> (ConstructionEquipment) el)
+                    .forEach(el -> list.add(el));
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        return list;
+    }
+
+    
+    
+    @Override
     public void calculationOfTheTotalCost(Building building) {
 
         long sum = 0l;
