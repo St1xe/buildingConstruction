@@ -99,7 +99,8 @@ public class DataProviderCSV implements DataProvider {
 //
 //        log.info("Стоимотсь постройки дома = " + sum);
     
-        log.info(calculationCostOfMaterials(building, Constants.PATH_TO_MATERIAL_CSV_FILE));
+//        log.info(calculationCostOfMaterials(building, Constants.PATH_TO_MATERIAL_CSV_FILE));
+        log.info(calculationCostOfConstructionEquipment(building, Constants.PATH_TO_MATERIAL_CSV_FILE, Constants.TIME_IN_MONTH_FOR_BUILD_A_HOUSE));
 
     }
 

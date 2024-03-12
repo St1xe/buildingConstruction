@@ -52,7 +52,6 @@ public interface DataProvider {
         return list;
     }
 
-    
     public void preparationForBuilding(Building building);
 
     public default List<Worker> distributionOfWorkers(Building building, String path) {
@@ -118,11 +117,11 @@ public interface DataProvider {
 
         return list;
     }
-    
+
     public default LocalDate coordinationOfConstructionTerms(Building building) {
-        
+
         LocalDate date = LocalDate.now();
-        
+
         switch (building.getClass().getSimpleName()) {
 
             case "ApartmentHouse" -> {
@@ -138,27 +137,42 @@ public interface DataProvider {
         }
         return date;
     }
-    
 
     public void calculationOfTheTotalCost(Building building);
-    
+
     public default double calculationCostOfMaterials(Building building, String pathToMaterial) {
-        
+
         double sum = 0;
-        
+
         List<Material> materials = building.getMaterials();
 
         sum = materials.stream()
-                .reduce(0.0, 
+                .reduce(0.0,
                         (accumulator, el) -> accumulator + el.getPrice() * el.getQuantityInStock(),
                         (accumulator, el) -> accumulator + el);
-         
-        
+
         return sum;
-        
+
     }
 
+    public default double calculationCostOfConstructionEquipment(Building building, String pathToEquipment, int time) {
+        
+
+        double sum = 0;
+
+        List<ConstructionEquipment> equipments = building.getConstructionEquipments();
+
+        sum = equipments.stream()
+                .reduce(0.0,
+                        (accumulator, el) -> accumulator + el.getPrice() * time * 10,
+                        (accumulator, el) -> accumulator + el);
+
+        return sum;
+
+    }
     
+    
+
     public void addWorker(Worker worker) throws IOException;
 
     public void addConstructionEquipment(ConstructionEquipment constructionEquipment) throws IOException;
