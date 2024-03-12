@@ -1,6 +1,7 @@
 package ru.sfedu.buildingconstruction.api;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +18,8 @@ import ru.sfedu.buildingconstruction.Constants;
 public interface DataProvider {
 
     static Logger log = Logger.getLogger(DataProvider.class);
+
+    public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws Exception;
 
     public default List<Material> selectionOfMaterials(String str) {
 
@@ -49,8 +52,7 @@ public interface DataProvider {
         return list;
     }
 
-    public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws Exception;
-
+    
     public void preparationForBuilding(Building building);
 
     public default List<Worker> distributionOfWorkers(Building building, String path) {
@@ -61,7 +63,7 @@ public interface DataProvider {
 
         if (building instanceof ApartmentHouse) {
             countOfWorkers = Constants.PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE;
-            
+
         } else if (building instanceof House) {
             countOfWorkers = Constants.PEOPLE_FOR_BUILD_A_HOUSE;
 
@@ -84,16 +86,16 @@ public interface DataProvider {
 
         return list;
     }
-    
+
     public default List<ConstructionEquipment> distributionOfConstructionEquipment(Building building, String path) {
-        
+
         List<ConstructionEquipment> list = new ArrayList<>();
 
         int numberOfEquipments = 0;
 
         if (building instanceof ApartmentHouse) {
             numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_AN_APARTMENT_HOUSE;
-            
+
         } else if (building instanceof House) {
             numberOfEquipments = Constants.NUMBER_OF_EQUIPMENT_FOR_BUILD_A_HOUSE;
 
@@ -117,8 +119,29 @@ public interface DataProvider {
         return list;
     }
     
-    public void calculationOfTheTotalCost(Building building);
+    public default LocalDate coordinationOfConstructionTerms(Building building) {
+        
+        LocalDate date = LocalDate.now();
+        
+        switch (building.getClass().getSimpleName()) {
+
+            case "ApartmentHouse" -> {
+                date = LocalDate.now().plusMonths(Constants.TIME_IN_MONTH_FOR_BUILD_AN_APARTMENT_HOUSE);
+            }
+            case "House" -> {
+                date = LocalDate.now().plusMonths(Constants.TIME_IN_MONTH_FOR_BUILD_A_HOUSE);
+            }
+            case "Garage" -> {
+                date = LocalDate.now().plusMonths(Constants.TIME_IN_MONTH_FOR_BUILD_A_GARAGE);
+            }
+
+        }
+        return date;
+    }
     
+
+    public void calculationOfTheTotalCost(Building building);
+
     public void addWorker(Worker worker) throws IOException;
 
     public void addConstructionEquipment(ConstructionEquipment constructionEquipment) throws IOException;
