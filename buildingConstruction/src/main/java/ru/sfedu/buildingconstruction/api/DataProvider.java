@@ -140,7 +140,7 @@ public interface DataProvider {
 
     public void calculationOfTheTotalCost(Building building);
 
-    public default double calculationCostOfMaterials(Building building, String pathToMaterial) {
+    public default double calculationCostOfMaterials(Building building) {
 
         double sum = 0;
 
@@ -155,8 +155,7 @@ public interface DataProvider {
 
     }
 
-    public default double calculationCostOfConstructionEquipment(Building building, String pathToEquipment, int time) {
-        
+    public default double calculationCostOfConstructionEquipment(Building building, int time) {
 
         double sum = 0;
 
@@ -170,9 +169,20 @@ public interface DataProvider {
         return sum;
 
     }
-    
-    
 
+    public default double calculationCostOfJob(Building building, int time) {
+        double sum = 0;
+
+        List<Worker> workers = building.getWorkers();
+
+        sum = workers.stream()
+                .reduce(0.0,
+                        (accumulator, el) -> accumulator + el.getSalary() * time,
+                        (accumulator, el) -> accumulator + el);
+
+        return sum;
+    }
+    
     public void addWorker(Worker worker) throws IOException;
 
     public void addConstructionEquipment(ConstructionEquipment constructionEquipment) throws IOException;
