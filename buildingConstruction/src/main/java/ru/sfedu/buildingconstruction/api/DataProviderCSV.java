@@ -113,6 +113,39 @@ public class DataProviderCSV implements DataProvider {
     }
 
     @Override
+    public List<Worker> distributionOfWorkers(Building building) {
+
+        List<Worker> list = new ArrayList<>();
+
+        int countOfWorkers = 0;
+
+        if (building instanceof ApartmentHouse) {
+            countOfWorkers = Constants.PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE;
+            
+        } else if (building instanceof House) {
+            countOfWorkers = Constants.PEOPLE_FOR_BUILD_A_HOUSE;
+
+        } else if (building instanceof Garage) {
+            countOfWorkers = Constants.PEOPLE_FOR_BUILD_A_GARAGE;
+
+        }
+
+        try {
+
+            getAllRecords(Worker.class, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE))
+                    .stream()
+                    .limit(countOfWorkers)
+                    .map(el -> (Worker) el)
+                    .forEach(el -> list.add(el));
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        return list;
+    }
+
+    @Override
     public void calculationOfTheTotalCost(Building building) {
 
         long sum = 0l;
@@ -134,7 +167,6 @@ public class DataProviderCSV implements DataProvider {
         log.info("Стоимотсь постройки дома = " + sum);
 
     }
-    
 
     @Override
     public void addWorker(Worker worker) throws IOException {

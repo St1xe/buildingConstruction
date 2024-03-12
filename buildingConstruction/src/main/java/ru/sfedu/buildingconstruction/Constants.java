@@ -13,6 +13,10 @@ public class Constants {
     public static final String PATH = "config";
     public static final String ACTOR = "system";
     
+    public static final int PEOPLE_FOR_BUILD_A_GARAGE = 4;
+    public static final int PEOPLE_FOR_BUILD_A_HOUSE = 8;
+    public static final int PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE = 30;
+    
     public static final String MONGO_ID = "id";
     public static final String MONGO_CLASS_NAME = "className";
     public static final String MONGO_CREATED_DATA = "createdData";
