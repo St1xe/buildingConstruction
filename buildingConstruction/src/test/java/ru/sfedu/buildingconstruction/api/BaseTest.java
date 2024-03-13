@@ -105,6 +105,7 @@ public class BaseTest {
     public static ApartmentHouse apartmentHouse10;
     public static ApartmentHouse apartmentHouse11;
     public static ApartmentHouse apartmentHouse31;
+    public static ApartmentHouse apartmentHouse33;
 
     public static House house;
     public static House house2;
@@ -339,6 +340,10 @@ public class BaseTest {
         apartmentHouse31 = new ApartmentHouse();
         apartmentHouse31.setNumberOfApartments(2);
         apartmentHouse31.setNumberOfFloors(3);
+        
+        apartmentHouse33 = new ApartmentHouse();
+        apartmentHouse33.setNumberOfApartments(2);
+        apartmentHouse33.setNumberOfFloors(3);
 
         apartmentHouse.setId("1");
         apartmentHouse2.setId("2");
@@ -353,6 +358,7 @@ public class BaseTest {
         apartmentHouse11.setId("11");
         
         apartmentHouse31.setId("31");
+        apartmentHouse33.setId("33");
 
     }
 

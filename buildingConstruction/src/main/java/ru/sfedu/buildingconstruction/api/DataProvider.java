@@ -122,7 +122,7 @@ public interface DataProvider {
 
         return list;
     }
-
+    
     public default LocalDate coordinationOfConstructionTerms(Building building) throws ClassCastException{
 
         LocalDate date = LocalDate.now();
