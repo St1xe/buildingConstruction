@@ -50,7 +50,7 @@ public interface DataProvider {
 
         List<Material> list = new ArrayList<>();
 
-        Arrays.stream(str.split(" ")).forEach(el -> {
+        Arrays.stream(str.split(",")).forEach(el -> {
 
             try {
                 list.add(getMaterial(el).get());
@@ -80,7 +80,7 @@ public interface DataProvider {
         List<EngineeringSystem> list = new ArrayList<>();
         try {
 
-            Arrays.stream(str.split(" ")).forEach(el -> {
+            Arrays.stream(str.split(",")).forEach(el -> {
 
                 list.add(EngineeringSystem.valueOf(el));
             });

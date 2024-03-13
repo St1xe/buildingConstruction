@@ -30,4 +30,14 @@
         <name>Самосвал</name>
         <price>3535.0</price>
     </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>34</id>
+        <name>Машина</name>
+        <price>1900.0</price>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="constructionEquipment">
+        <id>afc7691a-80e4-4f44-83f8-d5c857f61456</id>
+        <name>axsa</name>
+        <price>3333.0</price>
+    </wrapper>
 </wrapperXML>

@@ -54,7 +54,7 @@ public class Constants {
     public static final String MONGO_TABLE_NAME = "MONGO_TABLE_NAME";
     public static final String MONGO_URI = "MONGO_URI";
     
-    public static final String PATH_TO_RESOURCES = "src/main/resources/";
+    public static final String PATH_TO_RESOURCES = "";
     public static final String DEFAULT_PROPERTY_CONFIG_PATH = "environment.properties";
     public static final String DEFAULT_XML_CONFIG_PATH = "environment.xml";
     public static final String DEFAULT_YAML_CONFIG_PATH = "environment.yml";

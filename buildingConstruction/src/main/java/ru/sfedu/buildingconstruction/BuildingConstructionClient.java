@@ -38,17 +38,6 @@ public class BuildingConstructionClient {
 
         DataProvider provider;
 
-//        String[] x = {};
-//        String[] x = {"-plan", "House", "35", "4", "22", "1", "1 2"};
-//        String[] x = {"-build", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
-        String[] x = {"-cost", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
-
-//        String [] x = {"-worker", "12345g", "Max", "xxx", "89547854545", "-5012"};
-//        String [] x = {"-equipment", "12345g", "xxx", "-7373"};
-//        String [] x = {"-plan", "12345g", "xxx", "-7373"};
-//-plan  [Building] [square] [numberOfFloors] [numberOfApartments] [client] [materials] [EngineeringSystems] 
-        args = x;
-
         if (args.length == 0) {
             log.debug("main [1]: данные не были получены");
             return;

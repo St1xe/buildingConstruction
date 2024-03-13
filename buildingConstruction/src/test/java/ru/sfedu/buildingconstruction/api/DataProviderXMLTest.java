@@ -786,7 +786,7 @@ public class DataProviderXMLTest extends BaseTest{
         list.add(material32);
         list.add(material33);
 
-        assertEquals(list, dataProviderXML.selectionOfMaterials("32 33"));
+        assertEquals(list, dataProviderXML.selectionOfMaterials("32,33"));
     }
 
     @Test
@@ -805,7 +805,7 @@ public class DataProviderXMLTest extends BaseTest{
         list.add(EngineeringSystem.HEATING);
         list.add(EngineeringSystem.SEWERAGE);
 
-        assertEquals(list, dataProviderXML.selectionOfEngineeringSystems("HEATING SEWERAGE"));
+        assertEquals(list, dataProviderXML.selectionOfEngineeringSystems("HEATING,SEWERAGE"));
     }
 
     @Test

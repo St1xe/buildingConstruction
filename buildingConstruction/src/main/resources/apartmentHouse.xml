@@ -52,10 +52,10 @@
         <id>33</id>
         <square>0.0</square>
         <numberOfFloors>3</numberOfFloors>
-        <completionDate>20250913</completionDate>
-        <owner>80249e0c-5678-4949-9418-c89e8d0f5c84</owner>
-        <constructionEquipments>6/7/21/5/4/9/34/95bfcdab-43cb-477e-831b-58523be95e41/</constructionEquipments>
-        <workers>6/7/21/2/35/9/0464c0e0-1e05-45ef-848f-797ff806586d/794a20ce-03d2-41b5-95c4-53927417bb21/7a0d2e81-378c-4d4f-810e-f49a6b85fccd/258aa78e-8dce-4bb4-99c2-0c8e344c9a55/967ee13f-3011-4a62-9c85-dad31aefa57e/4/10/11/5/34/4e870edd-3fba-41ea-91b3-6ef1d34e2d1f/</workers>
+        <completionDate>20250914</completionDate>
+        <owner>b69edb29-2cbe-4777-9d00-66cd998232e2</owner>
+        <constructionEquipments>6/7/21/5/4/9/34/fdf86277-6941-4255-8334-da05a8ee78f4/</constructionEquipments>
+        <workers>6/7/21/2/35/9/1876a7e0-cee8-4b9a-ad0b-8e2e99869066/ac251f9c-24d2-4b99-af30-319e32c7ec0e/607f5353-3f91-4969-8158-e6350c300694/11c97b06-2279-451e-8ca2-fb02edbd957a/53d78dcd-4eda-4c13-b732-70d97352f6cf/4/10/11/5/34/6a185417-16e5-43e7-8201-29d550dbe6f1/</workers>
         <numberOfApartments>2</numberOfApartments>
     </wrapper>
 </wrapperXML>

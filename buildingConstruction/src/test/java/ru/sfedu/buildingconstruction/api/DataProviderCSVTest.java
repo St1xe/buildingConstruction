@@ -750,7 +750,7 @@ public class DataProviderCSVTest extends BaseTest {
         list.add(material32);
         list.add(material33);
 
-        assertEquals(list, dataProviderCSV.selectionOfMaterials("32 33"));
+        assertEquals(list, dataProviderCSV.selectionOfMaterials("32,33"));
     }
 
     @Test
@@ -769,7 +769,7 @@ public class DataProviderCSVTest extends BaseTest {
         list.add(EngineeringSystem.HEATING);
         list.add(EngineeringSystem.SEWERAGE);
 
-        assertEquals(list, dataProviderCSV.selectionOfEngineeringSystems("HEATING SEWERAGE"));
+        assertEquals(list, dataProviderCSV.selectionOfEngineeringSystems("HEATING,SEWERAGE"));
     }
 
     @Test

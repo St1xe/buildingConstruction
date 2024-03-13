@@ -763,7 +763,7 @@ public class DataBaseProviderTest {
         list.add(material32);
         list.add(material33);
 
-        assertEquals(list, dataBaseProvider.selectionOfMaterials("32 33"));
+        assertEquals(list, dataBaseProvider.selectionOfMaterials("32,33"));
     }
 
     @Test
@@ -782,7 +782,7 @@ public class DataBaseProviderTest {
         list.add(EngineeringSystem.HEATING);
         list.add(EngineeringSystem.SEWERAGE);
 
-        assertEquals(list, dataBaseProvider.selectionOfEngineeringSystems("HEATING SEWERAGE"));
+        assertEquals(list, dataBaseProvider.selectionOfEngineeringSystems("HEATING,SEWERAGE"));
     }
 
     @Test
