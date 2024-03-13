@@ -1,0 +1,135 @@
+@options
+@packages
+-classpath
+'/home/maksim/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/home/maksim/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/maksim/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/maksim/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar:/home/maksim/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar:/home/maksim/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar:/home/maksim/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar:/home/maksim/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/maksim/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/maksim/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/maksim/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/maksim/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/maksim/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/maksim/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/maksim/.m2/repository/org/mongodb/mongo-java-driver/3.12.14/mongo-java-driver-3.12.14.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.16.0/jackson-datatype-jdk8-2.16.0.jar:/home/maksim/.m2/repository/org/apache/maven/plugins/maven-javadoc-plugin/3.6.3/maven-javadoc-plugin-3.6.3.jar:/home/maksim/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/maksim/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.1.1/maven-reporting-api-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-archiver/3.6.1/maven-archiver-3.6.1.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/home/maksim/.m2/repository/org/apache/maven/shared/maven-invoker/3.2.0/maven-invoker-3.2.0.jar:/home/maksim/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar:/home/maksim/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/maksim/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/maksim/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.2.0/maven-common-artifact-filters-3.2.0.jar:/home/maksim/.m2/repository/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.jar:/home/maksim/.m2/repository/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.jar:/home/maksim/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar:/home/maksim/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar:/home/maksim/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/maksim/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/maksim/.m2/repository/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.jar:/home/maksim/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar:/home/maksim/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar:/home/maksim/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.jar:/home/maksim/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/maksim/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/maksim/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar:/home/maksim/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/maksim/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar:/home/maksim/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/maksim/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.jar:/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.0.0/plexus-component-annotations-2.0.0.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar:/home/maksim/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.jar:/home/maksim/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/home/maksim/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/maksim/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.4/wagon-provider-api-2.4.jar:/home/maksim/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/home/maksim/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/maksim/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/maksim/.m2/repository/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-java/1.2.0/plexus-java-1.2.0.jar:/home/maksim/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-archiver/4.9.0/plexus-archiver-4.9.0.jar:/home/maksim/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/maksim/.m2/repository/org/iq80/snappy/snappy/0.4/snappy-0.4.jar:/home/maksim/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'/home/maksim/NewStudies/AIS/building/buildingConstruction/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'buildingConstruction 1.0 API'
+-use
+-version
+-windowtitle
+'buildingConstruction 1.0 API'
+ru.sfedu.buildingconstruction
+ru.sfedu.buildingconstruction.util
+ru.sfedu.buildingconstruction.api
+ru.sfedu.buildingconstruction.model
+/home/maksim/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar = 1677510902862
+/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar = 1703696510247
+/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar = 1703696508564
+/home/maksim/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar = 1670588089772
+/home/maksim/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar = 1670588089848
+/home/maksim/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar = 1703708579113
+/home/maksim/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar = 1670587979240
+/home/maksim/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar = 1701858679197
+/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar = 1701858679353
+/home/maksim/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar = 1701858679113
+/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar = 1701858679189
+/home/maksim/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar = 1670596216338
+/home/maksim/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar = 1670596216834
+/home/maksim/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar = 1670596216542
+/home/maksim/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar = 1670596216566
+/home/maksim/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar = 1670596216394
+/home/maksim/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar = 1670596216722
+/home/maksim/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar = 1670596217118
+/home/maksim/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar = 1703402032686
+/home/maksim/.m2/repository/org/mongodb/mongo-java-driver/3.12.14/mongo-java-driver-3.12.14.jar = 1703681031208
+/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.jar = 1703681973993
+/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar = 1701858678925
+/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.16.0/jackson-datatype-jdk8-2.16.0.jar = 1703682017064
+/home/maksim/.m2/repository/org/apache/maven/plugins/maven-javadoc-plugin/3.6.3/maven-javadoc-plugin-3.6.3.jar = 1703718889388
+/home/maksim/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar = 1675419676113
+/home/maksim/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.1.1/maven-reporting-api-3.1.1.jar = 1703718897718
+/home/maksim/.m2/repository/org/apache/maven/maven-archiver/3.6.1/maven-archiver-3.6.1.jar = 1703718897826
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar = 1675417674496
+/home/maksim/.m2/repository/org/apache/maven/shared/maven-invoker/3.2.0/maven-invoker-3.2.0.jar = 1703718897854
+/home/maksim/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar = 1703718897938
+/home/maksim/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar = 1675419677440
+/home/maksim/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar = 1675419678595
+/home/maksim/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.2.0/maven-common-artifact-filters-3.2.0.jar = 1703718897930
+/home/maksim/.m2/repository/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.jar = 1703718897870
+/home/maksim/.m2/repository/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.jar = 1703718898062
+/home/maksim/.m2/repository/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.jar = 1703718898966
+/home/maksim/.m2/repository/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.jar = 1703718898058
+/home/maksim/.m2/repository/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.jar = 1703718898058
+/home/maksim/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.jar = 1703718898070
+/home/maksim/.m2/repository/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.jar = 1703718898246
+/home/maksim/.m2/repository/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.jar = 1703718898182
+/home/maksim/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar = 1703718898198
+/home/maksim/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar = 1706109885690
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar = 1703718898326
+/home/maksim/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar = 1662528672756
+/home/maksim/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar = 1662528672792
+/home/maksim/.m2/repository/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.jar = 1703718898342
+/home/maksim/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar = 1706109886050
+/home/maksim/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar = 1662530027162
+/home/maksim/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.jar = 1710339634920
+/home/maksim/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar = 1706109885994
+/home/maksim/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar = 1706109885974
+/home/maksim/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar = 1706109887564
+/home/maksim/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar = 1706109886150
+/home/maksim/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar = 1675419676847
+/home/maksim/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar = 1706109886118
+/home/maksim/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.jar = 1710339634992
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.jar = 1703718898466
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.jar = 1675419677909
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.jar = 1703718898530
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.jar = 1675419678049
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.jar = 1675419678114
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.jar = 1675419678158
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.jar = 1675419678182
+/home/maksim/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.jar = 1675419678214
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.0.0/plexus-component-annotations-2.0.0.jar = 1675417675252
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar = 1675419678314
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar = 1662530027262
+/home/maksim/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar = 1662528655280
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.jar = 1675417675492
+/home/maksim/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar = 1675417675736
+/home/maksim/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar = 1675417675668
+/home/maksim/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.4/wagon-provider-api-2.4.jar = 1703718898550
+/home/maksim/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar = 1703718898938
+/home/maksim/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar = 1662528673332
+/home/maksim/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar = 1703718898994
+/home/maksim/.m2/repository/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.jar = 1685791323886
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-java/1.2.0/plexus-java-1.2.0.jar = 1703718899066
+/home/maksim/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar = 1703718899146
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar = 1703718899082
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.jar = 1703718899210
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1.jar = 1703718899130
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-archiver/4.9.0/plexus-archiver-4.9.0.jar = 1703718899234
+/home/maksim/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar = 1703718899506
+/home/maksim/.m2/repository/org/iq80/snappy/snappy/0.4/snappy-0.4.jar = 1675417674824
+/home/maksim/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.jar = 1675417675136
+/home/maksim/NewStudies/AIS/building/buildingConstruction/src/main/java = 1701094863181
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/type-search-index.js = 1710344255144
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/package-search-index.js = 1710344255144
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/help-doc.html = 1710344255260
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/allpackages-index.html = 1710344255144
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/allclasses-index.html = 1710344255140
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/element-list = 1710344254708
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/script.js = 1710344255260
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/index.html = 1710344255064
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/index-all.html = 1710344255248
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/overview-tree.html = 1710344255060
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/search.js = 1710344255264
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/stylesheet.css = 1710344255260
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/tag-search-index.js = 1710344255148
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/constant-values.html = 1710344254808
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/member-search-index.js = 1710344255148
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/module-search-index.js = 1710344255144
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/jquery-ui.overrides.css = 1710344255272
+/home/maksim/NewStudies/AIS/building/buildingConstruction/target/site/apidocs/overview-summary.html = 1710344255252
