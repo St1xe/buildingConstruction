@@ -33,6 +33,9 @@ public class BaseTest {
     public static Worker worker21;
     public static Worker worker22;
     public static Worker worker23;
+    public static Worker worker31;
+    public static Worker worker34;
+    public static Worker worker35;
 
     public static Material material;
     public static Material material2;
@@ -48,6 +51,11 @@ public class BaseTest {
     public static Material material21;
     public static Material material22;
     public static Material material23;
+    public static Material material31;
+    public static Material material32;
+    public static Material material33;
+    public static Material material34;
+    public static Material material35;
 
     public static ConstructionEquipment constructionEquipment;
     public static ConstructionEquipment constructionEquipment2;
@@ -63,6 +71,11 @@ public class BaseTest {
     public static ConstructionEquipment constructionEquipment21;
     public static ConstructionEquipment constructionEquipment22;
     public static ConstructionEquipment constructionEquipment23;
+    public static ConstructionEquipment constructionEquipment31;
+    public static ConstructionEquipment constructionEquipment32;
+    public static ConstructionEquipment constructionEquipment33;
+    public static ConstructionEquipment constructionEquipment34;
+    public static ConstructionEquipment constructionEquipment35;
 
     public static Client client;
     public static Client client2;
@@ -78,6 +91,7 @@ public class BaseTest {
     public static Client client21;
     public static Client client22;
     public static Client client23;
+    public static Client client31;
 
     public static ApartmentHouse apartmentHouse;
     public static ApartmentHouse apartmentHouse2;
@@ -90,6 +104,7 @@ public class BaseTest {
     public static ApartmentHouse apartmentHouse9;
     public static ApartmentHouse apartmentHouse10;
     public static ApartmentHouse apartmentHouse11;
+    public static ApartmentHouse apartmentHouse31;
 
     public static House house;
     public static House house2;
@@ -102,6 +117,7 @@ public class BaseTest {
     public static House house9;
     public static House house10;
     public static House house11;
+    public static House house31;
 
     public static Garage garage;
     public static Garage garage2;
@@ -114,6 +130,7 @@ public class BaseTest {
     public static Garage garage9;
     public static Garage garage10;
     public static Garage garage11;
+    public static Garage garage31;
 
     public static void createAllRecords() {
         log.debug("createAllRecords [1]:");
@@ -144,6 +161,10 @@ public class BaseTest {
         worker22 = new Worker("Denis", "88005553535", "Строитель", 63000);
         worker23 = new Worker("Bori", "88003456745", "Строитель", 63000);
         
+        worker31 = new Worker("XX", "89993948212", "", 31333);
+        worker34 = new Worker("xsa", "84393948212", "xsa", 31333);
+        worker35 = new Worker("aaa", "84393943312", "xsass", 10000);
+        
         worker.setId("1");
         worker2.setId("2");
         worker3.setId("3");
@@ -159,6 +180,10 @@ public class BaseTest {
         worker21.setId("21");
         worker22.setId("22");
         worker23.setId("23");
+        
+        worker31.setId("31");
+        worker34.setId("34");
+        worker35.setId("35");
     }
 
     public static void createMaterialRecords() {
@@ -179,6 +204,12 @@ public class BaseTest {
         material22 = new Material("Белый кирпич", 879, 14);
         material23 = new Material("Гипс", 456, 14);
         
+        material31 = new Material("XXX", 432, 16);
+        material32 = new Material("YYY", 312, 14);
+        material33 = new Material("ZZZ", 342, 12);
+        material34 = new Material("AAA", 3342, 122);
+        material35 = new Material("iuhuiahgdi", 111, 100);
+        
         
         material.setId("1");
         material2.setId("2");
@@ -195,6 +226,13 @@ public class BaseTest {
         material21.setId("21");
         material22.setId("22");
         material23.setId("23");
+        
+        material31.setId("31");
+        material32.setId("32");
+        material33.setId("33");
+        material34.setId("34");
+        material35.setId("35");
+        
         
     }
 
@@ -216,6 +254,11 @@ public class BaseTest {
         constructionEquipment22 = new ConstructionEquipment("Кран", 42425);
         constructionEquipment23 = new ConstructionEquipment("Погрузчик", 1500);
         
+        constructionEquipment31 = new ConstructionEquipment("Авто", 1800);
+        
+        constructionEquipment34 = new ConstructionEquipment("Машина", 1900);
+        constructionEquipment35 = new ConstructionEquipment("bjdsbjc", 1000);
+        
         constructionEquipment.setId("1");
         constructionEquipment2.setId("2");
         constructionEquipment3.setId("3");
@@ -231,6 +274,10 @@ public class BaseTest {
         constructionEquipment21.setId("21");
         constructionEquipment22.setId("22");
         constructionEquipment23.setId("23");
+        
+        constructionEquipment31.setId("31");
+        constructionEquipment34.setId("34");
+        constructionEquipment35.setId("35");
     }
 
     public static void createClientRecords() {
@@ -251,6 +298,8 @@ public class BaseTest {
         client22 = new Client("Виктор", "89067853485", "vaet@mail.ru", "8759036213");
         client23 = new Client("Андрей", "+76548934567", "cjhvcvdv@mail.ru", "67549387234");
         
+        client31 = new Client("Андрей", "+79083748322", "bjsbxd@mail.ru", "6037823475");
+        
         
         client.setId("1");
         client2.setId("2");
@@ -267,6 +316,8 @@ public class BaseTest {
         client21.setId("21");
         client22.setId("22");
         client23.setId("23");
+        
+        client31.setId("31");
     }
 
     public static void createApartmentHouseRecords() {
@@ -284,6 +335,10 @@ public class BaseTest {
         apartmentHouse9 = new ApartmentHouse(building, 5);
         apartmentHouse10 = new ApartmentHouse(building, 7);
         apartmentHouse11 = new ApartmentHouse(building, 10);
+        
+        apartmentHouse31 = new ApartmentHouse();
+        apartmentHouse31.setNumberOfApartments(2);
+        apartmentHouse31.setNumberOfFloors(3);
 
         apartmentHouse.setId("1");
         apartmentHouse2.setId("2");
@@ -296,6 +351,8 @@ public class BaseTest {
         apartmentHouse9.setId("9");
         apartmentHouse10.setId("10");
         apartmentHouse11.setId("11");
+        
+        apartmentHouse31.setId("31");
 
     }
 
@@ -344,6 +401,8 @@ public class BaseTest {
         garage9 = new Garage(building, 7);
         garage10 = new Garage(building, 1);
         garage11 = new Garage(building, 2);
+        
+        garage31 = new Garage(building, 2);
 
         garage.setId("1");
         garage2.setId("2");
@@ -356,6 +415,8 @@ public class BaseTest {
         garage9.setId("9");
         garage10.setId("10");
         garage11.setId("11");
+        
+        garage31.setId("31");
 
     }
 

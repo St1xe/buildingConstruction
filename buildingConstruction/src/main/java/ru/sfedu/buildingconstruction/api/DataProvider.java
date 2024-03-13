@@ -21,7 +21,7 @@ public interface DataProvider {
 
     public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws Exception;
 
-    public default List<Material> selectionOfMaterials(String str) {
+    public default List<Material> selectionOfMaterials(String str) throws Exception {
 
         List<Material> list = new ArrayList<>();
 
@@ -33,28 +33,33 @@ public interface DataProvider {
                 log.error(ex.getMessage());
             } catch (NoSuchElementException ex) {
                 log.error("материал не найден");
-                System.exit(0);
+                throw new NoSuchElementException();
             }
 
         });
         return list;
     }
 
-    public default List<EngineeringSystem> selectionOfEngineeringSystems(String str) {
+    public default List<EngineeringSystem> selectionOfEngineeringSystems(String str) throws Exception {
 
         List<EngineeringSystem> list = new ArrayList<>();
+        try {
 
-        Arrays.stream(str.split(" ")).forEach(el -> {
+            Arrays.stream(str.split(" ")).forEach(el -> {
 
-            list.add(EngineeringSystem.valueOf(el));
-        });
+                list.add(EngineeringSystem.valueOf(el));
+            });
+        } catch (IllegalArgumentException ex) {
+            log.error("система не найдена");
+            throw new IllegalArgumentException();
+        }
 
         return list;
     }
 
-    public void preparationForBuilding(Building building);
+    public void preparationForBuilding(Building building) throws IOException;
 
-    public default List<Worker> distributionOfWorkers(Building building, String path) {
+    public default List<Worker> distributionOfWorkers(Building building, String path) throws IOException{
 
         List<Worker> list = new ArrayList<>();
 
@@ -80,13 +85,13 @@ public interface DataProvider {
                     .forEach(el -> list.add(el));
 
         } catch (IOException ex) {
-            ex.printStackTrace();
+            throw new IOException();
         }
 
         return list;
     }
 
-    public default List<ConstructionEquipment> distributionOfConstructionEquipment(Building building, String path) {
+    public default List<ConstructionEquipment> distributionOfConstructionEquipment(Building building, String path) throws IOException{
 
         List<ConstructionEquipment> list = new ArrayList<>();
 
@@ -112,13 +117,13 @@ public interface DataProvider {
                     .forEach(el -> list.add(el));
 
         } catch (IOException ex) {
-            ex.printStackTrace();
+            throw new IOException();
         }
 
         return list;
     }
 
-    public default LocalDate coordinationOfConstructionTerms(Building building) {
+    public default LocalDate coordinationOfConstructionTerms(Building building) throws ClassCastException{
 
         LocalDate date = LocalDate.now();
 
@@ -132,16 +137,16 @@ public interface DataProvider {
             }
             case "Garage" -> {
                 date = LocalDate.now().plusMonths(Constants.TIME_IN_MONTH_FOR_BUILD_A_GARAGE);
-            }
+            } default -> throw new ClassCastException();
 
         }
         return date;
     }
 
-    public default void calculationOfTheTotalCost(Building building) {
+    public default double calculationOfTheTotalCost(Building building) throws ClassCastException{
 
         int time = 0;
-        double sum = 0;
+        double sum = 1;
 
         switch (building.getClass().getSimpleName()) {
 
@@ -155,34 +160,34 @@ public interface DataProvider {
             case "Garage" -> {
                 time = Constants.TIME_IN_MONTH_FOR_BUILD_A_GARAGE;
                 sum = 0.1;
-            }
+            } default -> throw new ClassCastException();
 
         }
 
         sum *= calculationCostOfMaterials(building);
         sum += calculationCostOfConstructionEquipment(building, time);
         sum += calculationCostOfJob(building, time);
-        
-        
-        if(building.getSquare() > 300) {
+
+        if (building.getSquare() > 300) {
             sum *= 1.5;
-        } else if(building.getSquare() > 200) {
+        } else if (building.getSquare() > 200) {
             sum *= 1.2;
         } else if (building.getSquare() > 100) {
             sum *= 1.1;
         }
-        
-        if(building.getNumberOfFloors()> 3) {
+
+        if (building.getNumberOfFloors() > 3) {
             sum *= 1.5;
-        } else if(building.getNumberOfFloors()> 2) {
+        } else if (building.getNumberOfFloors() > 2) {
             sum *= 1.2;
-        } else if (building.getNumberOfFloors()> 1) {
+        } else if (building.getNumberOfFloors() > 1) {
             sum *= 1.1;
         }
-        
+
         sum *= 1.2;
-        
+
         log.info("Стоимотсь постройки здания = " + sum);
+        return sum;
     }
 
     public default double calculationCostOfMaterials(Building building) {
@@ -190,6 +195,7 @@ public interface DataProvider {
         double sum = 0;
 
         List<Material> materials = building.getMaterials();
+        
 
         sum = materials.stream()
                 .reduce(0.0,
@@ -230,13 +236,7 @@ public interface DataProvider {
         log.info("calculationCostOfJob [1]: sum = " + sum);
         return sum;
     }
-    
-    
-    
-    
-    
-    
-    
+
     public void addWorker(Worker worker) throws IOException;
 
     public void addConstructionEquipment(ConstructionEquipment constructionEquipment) throws IOException;

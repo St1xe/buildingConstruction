@@ -37,7 +37,7 @@ public class BuildingConstructionClient {
     private static Logger log = Logger.getLogger(BuildingConstructionClient.class);
 
     public BuildingConstructionClient() {
-        log.debug("BuildingConstructionClient[0]:starting application.....");
+        log.debug("BuildingConstructionClient[0]: starting application.....");
     }
 
     public static void main(String[] args) throws Exception {
@@ -68,36 +68,36 @@ public class BuildingConstructionClient {
             case "CSV" -> {
                 provider = new DataProviderCSV();
                 arguments = Arrays.copyOfRange(args, 1, args.length);
-                log.info("Выбран CSV дата провайдер");
+                log.info("main [2]: Выбран CSV дата провайдер");
             }
             case "XML" -> {
                 provider = new DataProviderXML();
                 arguments = Arrays.copyOfRange(args, 1, args.length);
                 ((DataProviderXML) provider).createAllFiles();
-                log.info("Выбран XML дата провайдер");
+                log.info("main [3]: Выбран XML дата провайдер");
             }
             case "DB" -> {
                 provider = new DataBaseProvider();
                 arguments = Arrays.copyOfRange(args, 1, args.length);
                 ((DataBaseProvider) provider).createAllTables();
-                log.info("Выбран DB дата провайдер");
+                log.info("main [4]: Выбран DB дата провайдер");
 
             }
             default -> {
                 provider = new DataProviderCSV();
                 ((DataProviderCSV) provider).createAllFiles();
-                log.info("Дата провайдер выбран по умолчанию");
+                log.info("main [5]: Дата провайдер выбран по умолчанию");
                 arguments = args;
             }
         }
 
-        log.info("Дата провайдер установлен  " + provider.getClass().getSimpleName());
+        log.info("main [6]: Дата провайдер установлен  " + provider.getClass().getSimpleName());
 
         switch (arguments[0]) {
             case "-owner" -> {
 
                 if (arguments.length < 6) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [7]: Данные введены некорректно");
                     return;
                 }
                 Client client = new Client();
@@ -124,15 +124,15 @@ public class BuildingConstructionClient {
 
                 try {
                     provider.addClient(client);
-                    log.info("Запись " + client + " добавлена");
+                    log.info("main [8]: Запись " + client + " добавлена");
                 } catch (IllegalArgumentException ex) {
-                    log.error("Запись " + client + " уже создана");
+                    log.error("main [9]: Запись " + client + " уже создана");
                 }
             }
 
             case "-material" -> {
                 if (arguments.length < 5) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [10]: Данные введены некорректно");
                     return;
                 }
                 Material material = new Material();
@@ -152,16 +152,16 @@ public class BuildingConstructionClient {
 
                 try {
                     provider.addMaterial(material);
-                    log.info("Запись " + material + " добавлена");
+                    log.info("main [11]: Запись " + material + " добавлена");
                 } catch (IllegalArgumentException ex) {
-                    log.error("Запись " + material + " уже создана");
+                    log.error("main [12]: Запись " + material + " уже создана");
                 }
 
             }
 
             case "-worker" -> {
                 if (arguments.length < 6) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [13]: Данные введены некорректно");
                     return;
                 }
                 Worker worker = new Worker();
@@ -182,14 +182,14 @@ public class BuildingConstructionClient {
 
                 try {
                     provider.addWorker(worker);
-                    log.info("Запись " + worker + " добавлена");
+                    log.info("main [14]: Запись " + worker + " добавлена");
                 } catch (IllegalArgumentException ex) {
-                    log.error("Запись " + worker + " уже создана");
+                    log.error("main [15]: Запись " + worker + " уже создана");
                 }
             }
             case "-equipment" -> {
                 if (arguments.length < 4) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [16]: Данные введены некорректно");
                     return;
                 }
                 ConstructionEquipment equipment = new ConstructionEquipment();
@@ -204,9 +204,9 @@ public class BuildingConstructionClient {
 
                 try {
                     provider.addConstructionEquipment(equipment);
-                    log.info("Запись " + equipment + " добавлена");
+                    log.info("main [17]: Запись " + equipment + " добавлена");
                 } catch (IllegalArgumentException ex) {
-                    log.error("Запись " + equipment + " уже создана");
+                    log.error("main [18]: Запись " + equipment + " уже создана");
                 }
             }
 
@@ -214,7 +214,7 @@ public class BuildingConstructionClient {
 //            -plan  [Building] [square] [numberOfFloors] [numberOfApartments] [client] [materials] [EngineeringSystems] 
             case "-plan" -> {
                 if (arguments.length < 7) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [19]: Данные введены некорректно");
                     return;
                 }
 
@@ -235,18 +235,18 @@ public class BuildingConstructionClient {
                         ((Garage) building).setNumberOfCars(Integer.parseInt(arguments[4]));
                     }
                     default -> {
-                        log.error("Данные введены некорректно");
+                        log.error("main [20]: Данные введены некорректно");
                         return;
                     }
                 }
 
-                log.debug(building.getClass());
+                log.debug("main [21]: " + building.getClass());
 
                 building.setSquare(Double.parseDouble(arguments[2]));
                 building.setNumberOfFloors(Integer.parseInt(arguments[3]));
 
                 if (provider.getClient(arguments[5]).isEmpty()) {
-                    log.error("Клиент не найден");
+                    log.error("main [21]:Клиент не найден");
                     return;
                 }
                 Client client = (Client) provider.getClient(arguments[5]).get();
@@ -262,7 +262,7 @@ public class BuildingConstructionClient {
                 try {
                     provider.preparationOfConstructionPlan(building, client, list, systems);
                 } catch (Exception ex) {
-                    log.error("Невозможно добавить новую постройку");
+                    log.error("main [22]:Невозможно добавить новую постройку");
                     return;
                 }
 
@@ -270,7 +270,7 @@ public class BuildingConstructionClient {
 
             case "-build" -> {
                 if (arguments.length < 3) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [23]:Данные введены некорректно");
                     return;
                 }
 
@@ -281,7 +281,7 @@ public class BuildingConstructionClient {
                     case "apartmenthouse" -> {
 
                         if (provider.getBuilding(arguments[1], ApartmentHouse.class).isEmpty()) {
-                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            log.error("main [24]:Здание с id = " + arguments[1] + " не найдено");
                             System.exit(0);
                         }
 
@@ -290,7 +290,7 @@ public class BuildingConstructionClient {
                     }
                     case "house" -> {
                         if (provider.getBuilding(arguments[1], House.class).isEmpty()) {
-                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            log.error("main [25]:Здание с id = " + arguments[1] + " не найдено");
                             System.exit(0);
                         }
 
@@ -298,14 +298,14 @@ public class BuildingConstructionClient {
                     }
                     case "garage" -> {
                         if (provider.getBuilding(arguments[1], Garage.class).isEmpty()) {
-                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            log.error("main [26]:Здание с id = " + arguments[1] + " не найдено");
                             System.exit(0);
                         }
 
                         building = provider.getBuilding(arguments[1], Garage.class).get();
                     }
                     default -> {
-                        log.error("Данные введены некорректно");
+                        log.error("main [27]:Данные введены некорректно");
                         return;
                     }
 
@@ -317,7 +317,7 @@ public class BuildingConstructionClient {
             case "-cost" -> {
 
                 if (arguments.length < 3) {
-                    log.error("Данные введены некорректно");
+                    log.error("main [28]:Данные введены некорректно");
                     return;
                 }
 
@@ -328,7 +328,7 @@ public class BuildingConstructionClient {
                     case "ApartmentHouse" -> {
 
                         if (provider.getBuilding(arguments[1], ApartmentHouse.class).isEmpty()) {
-                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            log.error("main [29]:Здание с id = " + arguments[1] + " не найдено");
                             System.exit(0);
                         }
 
@@ -337,7 +337,7 @@ public class BuildingConstructionClient {
                     }
                     case "House" -> {
                         if (provider.getBuilding(arguments[1], House.class).isEmpty()) {
-                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            log.error("main [30]:Здание с id = " + arguments[1] + " не найдено");
                             System.exit(0);
                         }
 
@@ -345,14 +345,14 @@ public class BuildingConstructionClient {
                     }
                     case "Garage" -> {
                         if (provider.getBuilding(arguments[1], Garage.class).isEmpty()) {
-                            log.error("Здание с id = " + arguments[1] + " не найдено");
+                            log.error("main [31]:Здание с id = " + arguments[1] + " не найдено");
                             System.exit(0);
                         }
 
                         building = provider.getBuilding(arguments[1], Garage.class).get();
                     }
                     default -> {
-                        log.error("Данные введены некорректно");
+                        log.error("main [32]:Данные введены некорректно");
                         return;
                     }
 
@@ -362,7 +362,7 @@ public class BuildingConstructionClient {
 
             }
             default -> {
-                log.error("Команда не найдена");
+                log.error("main [33]:Команда не найдена");
                 return;
             }
         }

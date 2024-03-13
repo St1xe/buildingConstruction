@@ -49,7 +49,9 @@ public class DataProviderCSV implements DataProvider {
         building.setMaterials(materials);
         building.setOwner(client);
         building.setEngineeringSystems(systems);
-        building.setId(UUID.randomUUID().toString());
+        if (building.getId() == null) {
+            building.setId(UUID.randomUUID().toString());
+        }
         addBuilding(building);
 
         log.info("id добавленного здания = " + building.getId());
@@ -57,7 +59,7 @@ public class DataProviderCSV implements DataProvider {
     }
 
     @Override
-    public void preparationForBuilding(Building building) {
+    public void preparationForBuilding(Building building) throws IOException{
 
         List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_WORKER_CSV_FILE);
         List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE);
@@ -71,12 +73,10 @@ public class DataProviderCSV implements DataProvider {
             updateBuilding(building.getId(), building);
         } catch (IOException ex) {
             log.error(ex.getMessage());
-            System.exit(1);
+            throw new IOException();
         }
 
     }
-
-    
 
     @Override
     public void addWorker(Worker worker) throws IOException {

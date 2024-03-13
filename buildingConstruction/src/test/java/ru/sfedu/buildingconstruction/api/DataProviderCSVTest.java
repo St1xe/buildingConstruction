@@ -5,6 +5,7 @@
 package ru.sfedu.buildingconstruction.api;
 
 import java.io.IOException;
+import java.time.LocalDate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,16 +37,16 @@ public class DataProviderCSVTest extends BaseTest {
 
     private static DataProviderCSV dataProviderCSV;
 
-//    @BeforeAll
-//    public static void setUpClass() throws IOException {
-//        log.debug("Before all[0]: starting tests");
-//
-//        dataProviderCSV = new DataProviderCSV();
-//        clearAllFIles();
-//        createAllRecords();
-//        addNecessaryRecords(Class.class);
-//        
-//    }
+    @BeforeAll
+    public static void setUpClass() throws IOException {
+        log.debug("Before all[0]: starting tests");
+
+        dataProviderCSV = new DataProviderCSV();
+        clearAllFIles();
+        createAllRecords();
+        addNecessaryRecords(Class.class);
+
+    }
 //
 //    @Test
 //    public void testAddWorkerPositive() throws Exception {
@@ -711,37 +712,309 @@ public class DataProviderCSVTest extends BaseTest {
 //        assertThrows(ClassCastException.class, () -> dataProviderCSV.updateBuilding(INCORRECTID, new Building()));
 //    }
 //
-//    private static void clearAllFIles() throws IOException {
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_MATERIAL_CSV_FILE));
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CLIENT_CSV_FILE));
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_APARTMENT_HOUSE_CSV_FILE));
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_HOUSE_CSV_FILE));
-//        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_GARAGE_CSV_FILE));
-//    }
-//
-//    private static void addNecessaryRecords(Class clazz) throws IOException {
-//        log.debug("addNecessaryRecords [1]: class = " + clazz);
-//
-//        switch (clazz.getSimpleName()) {
-//
-//            case "Worker" ->
-//                dataProviderCSV.addWorker(worker21);
-//            case "ConstructionEquipment" ->
-//                dataProviderCSV.addConstructionEquipment(constructionEquipment21);
-//            case "Material" ->
-//                dataProviderCSV.addMaterial(material21);
-//            case "Client" ->
-//                dataProviderCSV.addClient(client21);
-//            default -> {
-//                dataProviderCSV.addWorker(worker21);
-//                dataProviderCSV.addConstructionEquipment(constructionEquipment21);
-//                dataProviderCSV.addMaterial(material21);
-//                dataProviderCSV.addClient(client21);
-//            }
-//
-//        }
-//
-//    }
+
+    @Test
+    public void preparationOfConstructionPlanPositive() throws Exception {
+        log.debug("preparationOfConstructionPlanPositive[82]");
+
+        dataProviderCSV.addClient(client31);
+        dataProviderCSV.addMaterial(material31);
+
+        List<Material> materials = new ArrayList<>();
+        materials.add(material31);
+
+        List<EngineeringSystem> systems = new ArrayList<>();
+        systems.add(EngineeringSystem.HEATING);
+
+        dataProviderCSV.preparationOfConstructionPlan(apartmentHouse31, client31, materials, systems);
+
+        ApartmentHouse ah = apartmentHouse31;
+        ah.setMaterials(materials);
+        ah.setOwner(client31);
+        ah.setEngineeringSystems(systems);
+
+        assertEquals(ah, dataProviderCSV.getBuilding("31", ApartmentHouse.class).get());
+
+    }
+
+    @Test
+    public void preparationOfConstructionPlanNegative() throws Exception {
+        log.debug("preparationOfConstructionPlanNegative[83]");
+
+        assertThrows(ClassCastException.class,
+                () -> dataProviderCSV.preparationOfConstructionPlan(new Building(), client, null, null));
+
+    }
+
+    @Test
+    public void selectionOfMaterialsPositive() throws Exception {
+        log.debug("selectionOfMaterialsPositive[84]");
+
+        dataProviderCSV.addMaterial(material32);
+        dataProviderCSV.addMaterial(material33);
+
+        List<Material> list = new ArrayList<>();
+        list.add(material32);
+        list.add(material33);
+
+        assertEquals(list, dataProviderCSV.selectionOfMaterials("32 33"));
+    }
+
+    @Test
+    public void selectionOfMaterialsNegative() throws Exception {
+        log.debug("selectionOfMaterialsNegative[85]");
+
+        assertThrows(NoSuchElementException.class,
+                () -> dataProviderCSV.selectionOfMaterials(INCORRECTID));
+    }
+
+    @Test
+    public void selectionOfEngineeringSystemsPositive() throws Exception {
+        log.debug("selectionOfEngineeringSystemsPositive[86]");
+
+        List<EngineeringSystem> list = new ArrayList<>();
+        list.add(EngineeringSystem.HEATING);
+        list.add(EngineeringSystem.SEWERAGE);
+
+        assertEquals(list, dataProviderCSV.selectionOfEngineeringSystems("HEATING SEWERAGE"));
+    }
+
+    @Test
+    public void selectionOfEngineeringSystemsNegative() throws Exception {
+        log.debug("selectionOfEngineeringSystemsNegative[87]");
+
+        assertThrows(IllegalArgumentException.class,
+                () -> dataProviderCSV.selectionOfEngineeringSystems(INCORRECTID));
+    }
+
+    @Test
+    public void preparationForBuildingPositive() throws Exception {
+
+        log.debug("xsa");
+
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_APARTMENT_HOUSE_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CLIENT_CSV_FILE));
+
+        dataProviderCSV.addWorker(worker);
+        dataProviderCSV.addClient(client);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment);
+        apartmentHouse31.setOwner(client);
+        dataProviderCSV.addBuilding(apartmentHouse31);
+
+        dataProviderCSV.preparationForBuilding(apartmentHouse31);
+
+        List<Worker> workers = List.of(worker);
+        List<ConstructionEquipment> equipments = List.of(constructionEquipment);
+
+        ApartmentHouse ah = apartmentHouse31;
+        ah.setWorkers(workers);
+        ah.setConstructionEquipments(equipments);
+        ah.setCompletionDate(LocalDate.now().plusMonths(Constants.TIME_IN_MONTH_FOR_BUILD_AN_APARTMENT_HOUSE));
+        ah.setOwner(client);
+
+        assertEquals(ah, dataProviderCSV.getBuilding("31", ApartmentHouse.class).get());
+
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_APARTMENT_HOUSE_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CLIENT_CSV_FILE));
+    }
+
+    @Test
+    public void preparationForBuildingNegative() throws Exception {
+
+        assertThrows(ClassCastException.class, () -> dataProviderCSV.preparationForBuilding(new Building()));
+
+    }
+
+    @Test
+    public void preparationForBuilding2Negative() throws Exception {
+
+        ApartmentHouse a = new ApartmentHouse();
+        a.setId("1");
+
+        assertThrows(NoSuchElementException.class, () -> dataProviderCSV.preparationForBuilding(a));
+
+    }
+
+    @Test
+    public void distributionOfWorkersPositive() throws Exception {
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
+
+        dataProviderCSV.addWorker(worker);
+        dataProviderCSV.addWorker(worker2);
+        dataProviderCSV.addWorker(worker3);
+        dataProviderCSV.addWorker(worker4);
+        dataProviderCSV.addWorker(worker5);
+
+        assertEquals(4, dataProviderCSV.distributionOfWorkers(new Garage(), Constants.PATH_TO_WORKER_CSV_FILE).size());
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
+    }
+
+    @Test
+    public void distributionOfWorkersNegative() throws Exception {
+        assertThrows(IOException.class, () -> dataProviderCSV.distributionOfWorkers(new Garage(), INCORRECTPATH));
+    }
+
+    @Test
+    public void distributionOfConstructionEquipmentPositive() throws Exception {
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
+
+        dataProviderCSV.addConstructionEquipment(constructionEquipment);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment2);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment3);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment4);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment5);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment6);
+
+        assertEquals(5, dataProviderCSV.distributionOfConstructionEquipment(new Garage(), Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE).size());
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
+    }
+
+    @Test
+    public void distributionOfConstructionEquipmentNegative() throws Exception {
+        assertThrows(IOException.class, () -> dataProviderCSV.distributionOfConstructionEquipment(new Garage(), INCORRECTPATH));
+    }
+
+    @Test
+    public void coordinationOfConstructionTermsPositive() throws Exception {
+        assertEquals(LocalDate.now().plusMonths(6), dataProviderCSV.coordinationOfConstructionTerms(house));
+    }
+
+    @Test
+    public void coordinationOfConstructionTermsNegative() throws Exception {
+        assertThrows(ClassCastException.class, () -> dataProviderCSV.coordinationOfConstructionTerms(new Building()));
+    }
+
+    @Test
+    public void calculationOfTheTotalCostPositive() throws Exception {
+
+        dataProviderCSV.addMaterial(material34);
+        dataProviderCSV.addConstructionEquipment(constructionEquipment34);
+        dataProviderCSV.addWorker(worker34);
+
+        List<Material> materials = List.of(material34);
+        List<ConstructionEquipment> equipments = List.of(constructionEquipment34);
+        List<Worker> workers = List.of(worker34);
+
+        House house = new House();
+        house.setMaterials(materials);
+        house.setConstructionEquipments(equipments);
+        house.setWorkers(workers);
+        house.setNumberOfFloors(2);
+        house.setSquare(56);
+
+        assertEquals(506276.496, dataProviderCSV.calculationOfTheTotalCost(house));
+
+    }
+
+    @Test
+    public void calculationOfTheTotalCostNegative() throws Exception {
+        assertThrows(ClassCastException.class, () -> dataProviderCSV.calculationOfTheTotalCost(new Building()));
+
+    }
+
+    @Test
+    public void calculationCostOfMaterialsPositive() throws Exception {
+
+        dataProviderCSV.addMaterial(material35);
+
+        List<Material> list = List.of(material35);
+
+        House house = new House();
+        house.setMaterials(list);
+
+        assertEquals(11100, dataProviderCSV.calculationCostOfMaterials(house));
+
+    }
+
+    @Test
+    public void calculationCostOfMaterialsNegative() throws Exception {
+
+        House house = new House();
+
+        assertThrows(NullPointerException.class, () -> dataProviderCSV.calculationCostOfMaterials(house));
+
+    }
+
+    @Test
+    public void calculationCostOfConstructionEquipmentPositive() throws Exception {
+
+        dataProviderCSV.addConstructionEquipment(constructionEquipment35);
+
+        List<ConstructionEquipment> list = List.of(constructionEquipment35);
+
+        House house = new House();
+        house.setConstructionEquipments(list);
+
+        assertEquals(10000, dataProviderCSV.calculationCostOfConstructionEquipment(house, 1));
+
+    }
+
+    @Test
+    public void calculationCostOfConstructionEquipmentNegative() throws Exception {
+
+        House house = new House();
+
+        assertThrows(NullPointerException.class, () -> dataProviderCSV.calculationCostOfConstructionEquipment(house, 1));
+
+    }
+
+    @Test
+    public void calculationCostOfJobPositive() throws Exception {
+
+        dataProviderCSV.addWorker(worker35);
+
+        List<Worker> list = List.of(worker35);
+
+        House house = new House();
+        house.setWorkers(list);
+
+        assertEquals(10000, dataProviderCSV.calculationCostOfJob(house, 1));
+    }
+
+    @Test
+    public void calculationCostOfJobNegative() throws Exception {
+
+        House house = new House();
+
+        assertThrows(NullPointerException.class, () -> dataProviderCSV.calculationCostOfJob(house, 1));
+
+    }
+
+    private static void clearAllFIles() throws IOException {
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_MATERIAL_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CLIENT_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_APARTMENT_HOUSE_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_HOUSE_CSV_FILE));
+        dataProviderCSV.clearFile(Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_GARAGE_CSV_FILE));
+    }
+
+    private static void addNecessaryRecords(Class clazz) throws IOException {
+        log.debug("addNecessaryRecords [1]: class = " + clazz);
+
+        switch (clazz.getSimpleName()) {
+
+            case "Worker" ->
+                dataProviderCSV.addWorker(worker21);
+            case "ConstructionEquipment" ->
+                dataProviderCSV.addConstructionEquipment(constructionEquipment21);
+            case "Material" ->
+                dataProviderCSV.addMaterial(material21);
+            case "Client" ->
+                dataProviderCSV.addClient(client21);
+            default -> {
+                dataProviderCSV.addWorker(worker21);
+                dataProviderCSV.addConstructionEquipment(constructionEquipment21);
+                dataProviderCSV.addMaterial(material21);
+                dataProviderCSV.addClient(client21);
+            }
+
+        }
+
+    }
 }
