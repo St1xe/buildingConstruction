@@ -1,19 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ru.sfedu.buildingconstruction.model;
 
 import com.opencsv.bean.AbstractBeanField;
-import com.opencsv.bean.AbstractCsvConverter;
 import com.opencsv.exceptions.CsvConstraintViolationException;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
+
 import java.io.IOException;
+
 import java.util.NoSuchElementException;
 import java.util.Optional;
-import java.util.logging.Level;
+
 import org.apache.log4j.Logger;
+
 import ru.sfedu.buildingconstruction.api.DataProviderCSV;
 
 /**

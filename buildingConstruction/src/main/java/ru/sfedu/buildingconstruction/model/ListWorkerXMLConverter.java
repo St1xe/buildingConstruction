@@ -1,16 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ru.sfedu.buildingconstruction.model;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
+
 import javax.xml.bind.annotation.adapters.XmlAdapter;
+
 import org.apache.log4j.Logger;
+
 import ru.sfedu.buildingconstruction.api.DataProviderXML;
 
 /**
@@ -39,9 +39,9 @@ public class ListWorkerXMLConverter extends XmlAdapter<String, List<Worker>> {
             try {
                 list.add(dataProviderXML.getWorker(el).get());
             } catch (IOException ex) {
-                log.error("ListWorkerXMLConverter [3]: " + ex.getMessage());
+                log.error("ListWorkerXMLConverter [2]: " + ex.getMessage());
             } catch (NoSuchElementException x) {
-                log.info("ListWorkerXMLConverter [4]: работник с id = " + el + " не найден");
+                log.info("ListWorkerXMLConverter [3]: работник с id = " + el + " не найден");
                 throw new NoSuchElementException("работник не найден");
             }
         });

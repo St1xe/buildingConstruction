@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ru.sfedu.buildingconstruction.api;
 
 import java.io.File;
@@ -23,6 +19,7 @@ import javax.xml.bind.Unmarshaller;
 import org.apache.log4j.Logger;
 
 import ru.sfedu.buildingconstruction.Constants;
+
 import ru.sfedu.buildingconstruction.model.*;
 
 /**
@@ -41,6 +38,9 @@ public class DataProviderXML implements DataProvider {
     
    @Override
     public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws IOException {
+        
+        log.debug("preparationOfConstructionPlan [1]:");
+        
         building.setMaterials(materials);
         building.setOwner(client);
         building.setEngineeringSystems(systems);
@@ -55,6 +55,8 @@ public class DataProviderXML implements DataProvider {
 
     @Override
     public void preparationForBuilding(Building building) throws IOException{
+        
+        log.debug("preparationForBuilding [1]: ");
 
         List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_XML_FILE));
         List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_XML_FILE));

@@ -1,14 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 package ru.sfedu.buildingconstruction;
 
-import java.io.IOException;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 import org.apache.log4j.Logger;
 
@@ -16,6 +9,7 @@ import ru.sfedu.buildingconstruction.api.DataBaseProvider;
 import ru.sfedu.buildingconstruction.api.DataProvider;
 import ru.sfedu.buildingconstruction.api.DataProviderCSV;
 import ru.sfedu.buildingconstruction.api.DataProviderXML;
+
 import ru.sfedu.buildingconstruction.model.ApartmentHouse;
 import ru.sfedu.buildingconstruction.model.Building;
 import ru.sfedu.buildingconstruction.model.Client;
@@ -23,9 +17,9 @@ import ru.sfedu.buildingconstruction.model.ConstructionEquipment;
 import ru.sfedu.buildingconstruction.model.EngineeringSystem;
 import ru.sfedu.buildingconstruction.model.Garage;
 import ru.sfedu.buildingconstruction.model.House;
-
 import ru.sfedu.buildingconstruction.model.Material;
 import ru.sfedu.buildingconstruction.model.Worker;
+
 import ru.sfedu.buildingconstruction.util.EntityConfugurationUtil;
 
 /**
@@ -45,7 +39,6 @@ public class BuildingConstructionClient {
         DataProvider provider;
 
 //        String[] x = {};
-        
 //        String[] x = {"-plan", "House", "35", "4", "22", "1", "1 2"};
 //        String[] x = {"-build", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
         String[] x = {"-cost", "cd7cd9ba-211b-4ba5-8aeb-d5d3595a7c6d", "House"};
@@ -55,7 +48,7 @@ public class BuildingConstructionClient {
 //        String [] x = {"-plan", "12345g", "xxx", "-7373"};
 //-plan  [Building] [square] [numberOfFloors] [numberOfApartments] [client] [materials] [EngineeringSystems] 
         args = x;
-        
+
         if (args.length == 0) {
             log.debug("main [1]: данные не были получены");
             return;
@@ -210,8 +203,6 @@ public class BuildingConstructionClient {
                 }
             }
 
-//              java -jar buildingConstruction.jar [dataProvider] 
-//            -plan  [Building] [square] [numberOfFloors] [numberOfApartments] [client] [materials] [EngineeringSystems] 
             case "-plan" -> {
                 if (arguments.length < 7) {
                     log.error("main [19]: Данные введены некорректно");

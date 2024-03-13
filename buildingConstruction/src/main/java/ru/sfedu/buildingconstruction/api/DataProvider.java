@@ -45,6 +45,8 @@ public interface DataProvider {
      * @throws Exception - exception will be thrown if the material is not found
      */
     public default List<Material> selectionOfMaterials(String str) throws Exception {
+        
+        log.debug("selectionOfMaterials [1]:");
 
         List<Material> list = new ArrayList<>();
 
@@ -73,6 +75,8 @@ public interface DataProvider {
      */
     public default List<EngineeringSystem> selectionOfEngineeringSystems(String str) throws Exception {
 
+        log.debug("selectionOfEngineeringSystems [1]:");
+        
         List<EngineeringSystem> list = new ArrayList<>();
         try {
 
@@ -109,6 +113,8 @@ public interface DataProvider {
      */
     public default List<Worker> distributionOfWorkers(Building building, String path) throws IOException{
 
+        log.debug("distributionOfWorkers [1]:");
+        
         List<Worker> list = new ArrayList<>();
 
         int countOfWorkers = 0;
@@ -149,6 +155,8 @@ public interface DataProvider {
      */
     public default List<ConstructionEquipment> distributionOfConstructionEquipment(Building building, String path) throws IOException{
 
+        log.debug("distributionOfConstructionEquipment [1]:");
+        
         List<ConstructionEquipment> list = new ArrayList<>();
 
         int numberOfEquipments = 0;
@@ -189,6 +197,8 @@ public interface DataProvider {
      */
     public default LocalDate coordinationOfConstructionTerms(Building building) throws ClassCastException{
 
+        log.debug("coordinationOfConstructionTerms [1]:");
+        
         LocalDate date = LocalDate.now();
 
         switch (building.getClass().getSimpleName()) {
@@ -218,6 +228,8 @@ public interface DataProvider {
      */
     public default double calculationOfTheTotalCost(Building building) throws ClassCastException{
 
+        log.debug("calculationOfTheTotalCost [1]:");
+        
         int time = 0;
         double sum = 1;
 
@@ -272,6 +284,8 @@ public interface DataProvider {
      */
     public default double calculationCostOfMaterials(Building building) {
 
+        log.debug("calculationCostOfMaterials [1]:");
+        
         double sum = 0;
 
         List<Material> materials = building.getMaterials();
@@ -296,6 +310,8 @@ public interface DataProvider {
      */
     public default double calculationCostOfConstructionEquipment(Building building, int time) {
 
+        log.debug("calculationCostOfConstructionEquipment [1]:");
+        
         double sum = 0;
 
         List<ConstructionEquipment> equipments = building.getConstructionEquipments();
@@ -318,6 +334,9 @@ public interface DataProvider {
      * @return         - amount spent of works
      */
     public default double calculationCostOfJob(Building building, int time) {
+        
+        log.debug("calculationCostOfJob [1]:");
+        
         double sum = 0;
 
         List<Worker> workers = building.getWorkers();
@@ -339,7 +358,7 @@ public interface DataProvider {
      * @throws IOException - exception will be thrown if we can’t add an employee
      */
     public void addWorker(Worker worker) throws IOException;
-
+    
     /**
      * Method for adding a new construction equipment
      * 

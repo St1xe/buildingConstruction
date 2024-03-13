@@ -1,11 +1,13 @@
 package ru.sfedu.buildingconstruction.api;
 
 import com.opencsv.CSVWriter;
+
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
+
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
@@ -46,6 +48,9 @@ public class DataProviderCSV implements DataProvider {
 
     @Override
     public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws IOException {
+        
+        log.debug("preparationOfConstructionPlan [1]:");
+        
         building.setMaterials(materials);
         building.setOwner(client);
         building.setEngineeringSystems(systems);
@@ -61,6 +66,8 @@ public class DataProviderCSV implements DataProvider {
     @Override
     public void preparationForBuilding(Building building) throws IOException{
 
+        log.debug("preparationForBuilding [1]:");
+        
         List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
         List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
         LocalDate date = coordinationOfConstructionTerms(building);

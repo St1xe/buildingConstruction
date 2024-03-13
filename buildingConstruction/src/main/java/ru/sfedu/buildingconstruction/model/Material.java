@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ru.sfedu.buildingconstruction.model;
 
 import com.opencsv.bean.CsvBindByPosition;
+
 import java.util.Objects;
 import java.util.UUID;
-import ru.sfedu.buildingconstruction.util.EntityConfugurationUtil;
 
 /**
  *
  * @author maksim
  */
 public class Material {
-    
+
     @CsvBindByPosition(position = 0)
     private String id;
     @CsvBindByPosition(position = 1)
@@ -27,14 +23,13 @@ public class Material {
     public Material() {
     }
 
-    
     public Material(String name, double price, double quantityInStock) {
         id = UUID.randomUUID().toString();
         this.name = name;
         this.price = price;
         this.quantityInStock = quantityInStock;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -66,8 +61,6 @@ public class Material {
     public void setQuantityInStock(double quantityInStock) {
         this.quantityInStock = quantityInStock;
     }
-    
-    
 
     @Override
     public int hashCode() {
@@ -92,16 +85,9 @@ public class Material {
         return Objects.equals(this.name, other.name);
     }
 
-  
-
-    
-
     @Override
     public String toString() {
         return "Material{" + "name=" + name + ", price=" + price + ", quantityInStock=" + quantityInStock + '}';
     }
 
-  
-    
-    
 }

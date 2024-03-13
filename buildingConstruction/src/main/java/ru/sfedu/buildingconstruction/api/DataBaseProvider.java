@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -46,6 +47,9 @@ public class DataBaseProvider implements DataProvider {
     
     @Override
     public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws IOException {
+       
+        log.debug("preparationOfConstructionPlan [1]:");
+        
         building.setMaterials(materials);
         building.setOwner(client);
         building.setEngineeringSystems(systems);
@@ -62,6 +66,8 @@ public class DataBaseProvider implements DataProvider {
     @Override
     public void preparationForBuilding(Building building) throws IOException{
 
+        log.debug("preparationForBuilding [1]:");
+        
         List<Worker> workers = distributionOfWorkers(building, Constants.WORKER_TABLE);
         List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.CONSTRUCTION_EQUIPMENT_TABLE);
         LocalDate date = coordinationOfConstructionTerms(building);
