@@ -78,7 +78,7 @@ public interface DataProvider {
 
         try {
 
-            getAllRecords(Worker.class, Constants.PATH_TO_RESOURCES.concat(path))
+            getAllRecords(Worker.class, path)
                     .stream()
                     .limit(countOfWorkers)
                     .map(el -> (Worker) el)
@@ -110,7 +110,7 @@ public interface DataProvider {
 
         try {
 
-            getAllRecords(ConstructionEquipment.class, Constants.PATH_TO_RESOURCES.concat(path))
+            getAllRecords(ConstructionEquipment.class, path)
                     .stream()
                     .limit(numberOfEquipments)
                     .map(el -> (ConstructionEquipment) el)

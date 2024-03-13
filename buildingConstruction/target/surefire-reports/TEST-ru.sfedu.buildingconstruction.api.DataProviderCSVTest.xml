@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="18.106" tests="103" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="23.696" tests="103" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire/surefirebooter7343031170785907559.jar /home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire 2024-03-13T13-28-16_153-jvmRun1 surefire5450085048476190713tmp surefire_05413496756223404655tmp"/>
+    <property name="sun.java.command" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire/surefirebooter17185772639657253380.jar /home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire 2024-03-13T14-29-27_034-jvmRun1 surefire8105841054957758863tmp surefire_05550588674809301025tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="ru.sfedu.buildingconstruction.api.DataProviderCSVTest"/>
     <property name="surefire.test.class.path" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/test-classes:/home/maksim/NewStudies/AIS/building/buildingConstruction/target/classes:/home/maksim/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/home/maksim/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/home/maksim/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/maksim/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/maksim/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar:/home/maksim/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/maksim/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/maksim/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/maksim/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/maksim/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/maksim/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar:/home/maksim/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar:/home/maksim/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar:/home/maksim/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/maksim/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/maksim/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/maksim/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/maksim/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/maksim/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/maksim/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/maksim/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/maksim/.m2/repository/org/mongodb/mongo-java-driver/3.12.14/mongo-java-driver-3.12.14.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar:/home/maksim/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.16.0/jackson-datatype-jdk8-2.16.0.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire/surefirebooter7343031170785907559.jar"/>
+    <property name="surefire.real.class.path" value="/home/maksim/NewStudies/AIS/building/buildingConstruction/target/surefire/surefirebooter17185772639657253380.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+7-Ubuntu-122.04.1"/>
     <property name="user.name" value="maksim"/>
@@ -53,107 +53,107 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGetGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.334"/>
-  <testcase name="testUpdateClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.011"/>
-  <testcase name="testDeleteGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.743"/>
-  <testcase name="calculationCostOfMaterialsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.026"/>
-  <testcase name="testUpdateApartmentHouseToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.256"/>
-  <testcase name="testUpdateMaterialToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.078"/>
-  <testcase name="testDeleteGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.095"/>
-  <testcase name="testAddConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.031"/>
-  <testcase name="calculationCostOfMaterialsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testUpdateApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.553"/>
-  <testcase name="testAddApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.413"/>
-  <testcase name="calculationCostOfConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.02"/>
-  <testcase name="testGetMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.029"/>
-  <testcase name="testAddConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.039"/>
-  <testcase name="testUpdateApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.283"/>
-  <testcase name="distributionOfConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.127"/>
-  <testcase name="testGetClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.025"/>
-  <testcase name="testAddApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.494"/>
-  <testcase name="testUpdateConstructionEquipmentToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.052"/>
-  <testcase name="calculationCostOfConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="testGetMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.026"/>
-  <testcase name="distributionOfConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
-  <testcase name="testGetClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.023"/>
-  <testcase name="testDeleteClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.046"/>
-  <testcase name="testAddWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.028"/>
-  <testcase name="testDeleteBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
-  <testcase name="testDeleteClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.006"/>
-  <testcase name="testGetAllWorkerRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.081"/>
+  <testcase name="testGetGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.474"/>
+  <testcase name="testUpdateClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.036"/>
+  <testcase name="testDeleteGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.954"/>
+  <testcase name="calculationCostOfMaterialsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.055"/>
+  <testcase name="testUpdateApartmentHouseToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.479"/>
+  <testcase name="testUpdateMaterialToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.137"/>
+  <testcase name="testDeleteGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.135"/>
+  <testcase name="testAddConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.054"/>
+  <testcase name="calculationCostOfMaterialsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testUpdateApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.795"/>
+  <testcase name="testAddApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.599"/>
+  <testcase name="calculationCostOfConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.035"/>
+  <testcase name="testGetMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.046"/>
+  <testcase name="testAddConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.063"/>
+  <testcase name="testUpdateApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.321"/>
+  <testcase name="distributionOfConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.213"/>
+  <testcase name="testGetClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.038"/>
+  <testcase name="testAddApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.683"/>
+  <testcase name="testUpdateConstructionEquipmentToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.086"/>
+  <testcase name="calculationCostOfConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.004"/>
+  <testcase name="testGetMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.036"/>
+  <testcase name="distributionOfConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.005"/>
+  <testcase name="testGetClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.029"/>
+  <testcase name="testDeleteClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.047"/>
+  <testcase name="testAddWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.034"/>
+  <testcase name="testDeleteBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.004"/>
+  <testcase name="testDeleteClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.009"/>
+  <testcase name="testGetAllWorkerRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.141"/>
   <testcase name="testUpdateBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testAddWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.038"/>
-  <testcase name="testGetAllWorkerRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0"/>
-  <testcase name="testGetAllGarageRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.25"/>
-  <testcase name="testGetAllMaterialRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.065"/>
-  <testcase name="calculationCostOfJobPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.021"/>
-  <testcase name="testGetAllClientRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.055"/>
+  <testcase name="testAddWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.054"/>
+  <testcase name="testGetAllWorkerRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testGetAllGarageRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.257"/>
+  <testcase name="testGetAllMaterialRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.079"/>
+  <testcase name="calculationCostOfJobPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.029"/>
+  <testcase name="testGetAllClientRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.097"/>
   <testcase name="testGetAllGarageRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testGetAllMaterialRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="calculationCostOfJobNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="testDeleteConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.037"/>
-  <testcase name="preparationOfConstructionPlanPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.566"/>
-  <testcase name="testGetAllClientRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testGetAllConstructionEquipmentsRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testDeleteConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.005"/>
-  <testcase name="preparationOfConstructionPlanNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testGetBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
+  <testcase name="testGetAllMaterialRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="calculationCostOfJobNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testDeleteConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.057"/>
+  <testcase name="preparationOfConstructionPlanPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.843"/>
+  <testcase name="testGetAllClientRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testGetAllConstructionEquipmentsRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testDeleteConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.008"/>
+  <testcase name="preparationOfConstructionPlanNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testGetBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
   <testcase name="testGetAllConstructionEquipmentRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.078"/>
-  <testcase name="testGetAllHouseRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.195"/>
-  <testcase name="testGetConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.02"/>
-  <testcase name="testUpdateWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.036"/>
+  <testcase name="testGetAllHouseRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.29"/>
+  <testcase name="testGetConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.038"/>
+  <testcase name="testUpdateWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.072"/>
   <testcase name="testGetAllHouseRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testGetConstructionEquiomentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.021"/>
-  <testcase name="distributionOfWorkersPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.091"/>
-  <testcase name="selectionOfMaterialsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.042"/>
-  <testcase name="testAddMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.025"/>
-  <testcase name="testUpdateWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.006"/>
-  <testcase name="distributionOfWorkersNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="selectionOfMaterialsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.005"/>
-  <testcase name="testAddMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.026"/>
-  <testcase name="testGetWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.025"/>
-  <testcase name="testGetAllApartmentHouseRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.241"/>
-  <testcase name="testAddGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.21"/>
-  <testcase name="testUpdateWorkerToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.048"/>
-  <testcase name="testGetWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.038"/>
-  <testcase name="testDeleteWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.047"/>
-  <testcase name="testGetAllApartmentHouseRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testAddGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.31"/>
-  <testcase name="testDeleteWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.005"/>
-  <testcase name="testUpdateHouseToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.544"/>
-  <testcase name="testUpdateGarageToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.777"/>
-  <testcase name="testUpdateConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.034"/>
-  <testcase name="testGetHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.446"/>
-  <testcase name="testAddClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.017"/>
-  <testcase name="testUpdateConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.004"/>
-  <testcase name="testDeleteApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.433"/>
-  <testcase name="testDeleteHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="1.009"/>
-  <testcase name="testAddBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="coordinationOfConstructionTermsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="testGetHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.468"/>
-  <testcase name="testAddClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.031"/>
-  <testcase name="calculationOfTheTotalCostPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.083"/>
-  <testcase name="testUpdateClientToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.048"/>
-  <testcase name="testDeleteApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.105"/>
-  <testcase name="testDeleteHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.207"/>
+  <testcase name="testGetConstructionEquiomentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.033"/>
+  <testcase name="distributionOfWorkersPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.152"/>
+  <testcase name="selectionOfMaterialsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.069"/>
+  <testcase name="testAddMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.052"/>
+  <testcase name="testUpdateWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.008"/>
+  <testcase name="distributionOfWorkersNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="selectionOfMaterialsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.007"/>
+  <testcase name="testAddMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.051"/>
+  <testcase name="testGetWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.029"/>
+  <testcase name="testGetAllApartmentHouseRecordsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.313"/>
+  <testcase name="testAddGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.334"/>
+  <testcase name="testUpdateWorkerToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.076"/>
+  <testcase name="testGetWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.05"/>
+  <testcase name="testDeleteWorkerPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.063"/>
+  <testcase name="testGetAllApartmentHouseRecordsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.003"/>
+  <testcase name="testAddGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.409"/>
+  <testcase name="testDeleteWorkerNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.008"/>
+  <testcase name="testUpdateHouseToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.653"/>
+  <testcase name="testUpdateGarageToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.931"/>
+  <testcase name="testUpdateConstructionEquipmentPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.096"/>
+  <testcase name="testGetHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.643"/>
+  <testcase name="testAddClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.027"/>
+  <testcase name="testUpdateConstructionEquipmentNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.006"/>
+  <testcase name="testDeleteApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.888"/>
+  <testcase name="testDeleteHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="1.216"/>
+  <testcase name="testAddBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.004"/>
+  <testcase name="coordinationOfConstructionTermsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
+  <testcase name="testGetHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.556"/>
+  <testcase name="testAddClientNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.047"/>
+  <testcase name="calculationOfTheTotalCostPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.084"/>
+  <testcase name="testUpdateClientToAnExistingRecord" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.088"/>
+  <testcase name="testDeleteApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.127"/>
+  <testcase name="testDeleteHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.312"/>
   <testcase name="coordinationOfConstructionTermsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="testUpdateHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="1.04"/>
-  <testcase name="testGetApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.197"/>
-  <testcase name="calculationOfTheTotalCostNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="selectionOfEngineeringSystemsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
-  <testcase name="testUpdateGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.922"/>
-  <testcase name="testUpdateHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.317"/>
-  <testcase name="testGetApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.42"/>
-  <testcase name="selectionOfEngineeringSystemsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
-  <testcase name="testUpdateGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.247"/>
-  <testcase name="preparationForBuildingPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.863"/>
-  <testcase name="testDeleteMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.027"/>
+  <testcase name="testUpdateHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="1.158"/>
+  <testcase name="testGetApartmentHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.283"/>
+  <testcase name="calculationOfTheTotalCostNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
+  <testcase name="selectionOfEngineeringSystemsPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.002"/>
+  <testcase name="testUpdateGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="1.025"/>
+  <testcase name="testUpdateHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.289"/>
+  <testcase name="testGetApartmentHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.371"/>
+  <testcase name="selectionOfEngineeringSystemsNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.001"/>
+  <testcase name="testUpdateGarageNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.414"/>
+  <testcase name="preparationForBuildingPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.954"/>
+  <testcase name="testDeleteMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.042"/>
   <testcase name="preparationForBuildingNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.007"/>
-  <testcase name="testUpdateMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.033"/>
-  <testcase name="testAddHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.522"/>
-  <testcase name="testDeleteMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.006"/>
-  <testcase name="testGetGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.555"/>
-  <testcase name="testUpdateClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.028"/>
-  <testcase name="testUpdateMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.004"/>
-  <testcase name="testAddHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.65"/>
+  <testcase name="testUpdateMaterialPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.039"/>
+  <testcase name="testAddHousePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.674"/>
+  <testcase name="testDeleteMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.005"/>
+  <testcase name="testGetGaragePositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.539"/>
+  <testcase name="testUpdateClientPositive" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.051"/>
+  <testcase name="testUpdateMaterialNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.005"/>
+  <testcase name="testAddHouseNegative" classname="ru.sfedu.buildingconstruction.api.DataProviderCSVTest" time="0.847"/>
 </testsuite>

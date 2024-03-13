@@ -19,6 +19,24 @@
         <quantityInStock>14.0</quantityInStock>
     </wrapper>
     <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>31</id>
+        <name>XXX</name>
+        <price>432.0</price>
+        <quantityInStock>16.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>32</id>
+        <name>YYY</name>
+        <price>312.0</price>
+        <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>33</id>
+        <name>ZZZ</name>
+        <price>342.0</price>
+        <quantityInStock>12.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
         <id>1</id>
         <name>Кирпич</name>
         <price>12150.0</price>
@@ -29,6 +47,12 @@
         <name>Бетон</name>
         <price>15054.0</price>
         <quantityInStock>14.0</quantityInStock>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
+        <id>34</id>
+        <name>AAA</name>
+        <price>3342.0</price>
+        <quantityInStock>122.0</quantityInStock>
     </wrapper>
     <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="material">
         <id>9</id>

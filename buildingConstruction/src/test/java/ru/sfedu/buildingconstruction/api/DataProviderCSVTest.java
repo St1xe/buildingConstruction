@@ -827,11 +827,11 @@ public class DataProviderCSVTest extends BaseTest {
 
         log.debug("distributionOfWorkersPositive[90]");
         
-        dataProviderCSV.addWorker(new Worker());
-        dataProviderCSV.addWorker(new Worker());
-        dataProviderCSV.addWorker(new Worker());
-        dataProviderCSV.addWorker(new Worker());
-        dataProviderCSV.addWorker(new Worker());
+        dataProviderCSV.addWorker(new Worker("cdsbc", "894839283911", "xsx", 333232));
+        dataProviderCSV.addWorker(new Worker("isisi", "89384728391", "xsxaasaq", 83838));
+        dataProviderCSV.addWorker(new Worker("ooow", "89382903922", "ppqpq", 26090));
+        dataProviderCSV.addWorker(new Worker("pwnc", "89384194371", "soppox", 83922));
+        dataProviderCSV.addWorker(new Worker("oeiwoidj", "84928391031", "xsaxx21", 21000));
 
         assertEquals(4, dataProviderCSV.distributionOfWorkers(new Garage(), Constants.PATH_TO_WORKER_CSV_FILE).size());
     }
@@ -847,12 +847,12 @@ public class DataProviderCSVTest extends BaseTest {
         log.debug("distributionOfConstructionEquipmentPositive[92]");
         
 
-        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment());
-        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment());
-        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment());
-        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment());
-        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment());
-        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment());
+        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment("xsa", 21));
+        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment("spapxosa", 31));
+        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment("xwoo", 31));
+        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment("xkjwoijd", 3131));
+        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment("ppwpxxxsq", 23));
+        dataProviderCSV.addConstructionEquipment(new ConstructionEquipment("cndshciuds", 21));
 
         assertEquals(5, dataProviderCSV.distributionOfConstructionEquipment(new Garage(), Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE).size());
     }

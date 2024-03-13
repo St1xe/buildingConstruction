@@ -48,4 +48,14 @@
         <workers>21/</workers>
         <numberOfApartments>3</numberOfApartments>
     </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="apartmentHouse">
+        <id>33</id>
+        <square>0.0</square>
+        <numberOfFloors>3</numberOfFloors>
+        <completionDate>20250913</completionDate>
+        <owner>5c5acd36-149a-4095-aa46-caab535ad046</owner>
+        <constructionEquipments>6/7/21/5/4/9/34/09f6f27f-294c-4704-b9c7-c7f6a84a35cf/</constructionEquipments>
+        <workers>6/7/21/2/35/9/42df9240-6c7a-4d08-be72-262caab3b224/7631d4a9-371c-48f0-9396-613b5ce2af0f/f6591485-7db4-441a-abee-27498cc96f43/8dad1626-14d8-4e6f-8b12-95faca072654/a2ba15b1-21eb-4336-bd80-e35e1ae0e7e5/4/10/11/5/34/59cc0438-ae80-43cc-9966-c55fd1801c66/</workers>
+        <numberOfApartments>2</numberOfApartments>
+    </wrapper>
 </wrapperXML>

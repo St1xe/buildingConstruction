@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ru.sfedu.buildingconstruction.api.DataProviderCSVTest
 -------------------------------------------------------------------------------
-Tests run: 103, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.106 s - in ru.sfedu.buildingconstruction.api.DataProviderCSVTest
+Tests run: 103, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.696 s - in ru.sfedu.buildingconstruction.api.DataProviderCSVTest

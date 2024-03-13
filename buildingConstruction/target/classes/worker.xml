@@ -29,11 +29,53 @@
         <salary>60777.0</salary>
     </wrapper>
     <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>35</id>
+        <name>aaa</name>
+        <phoneNumber>84393943312</phoneNumber>
+        <jobTitle>xsass</jobTitle>
+        <salary>10000.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
         <id>9</id>
         <name>Nikita</name>
         <phoneNumber>89525143728</phoneNumber>
         <jobTitle>Сварщик</jobTitle>
         <salary>78000.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>42df9240-6c7a-4d08-be72-262caab3b224</id>
+        <name>cdsbc</name>
+        <phoneNumber>894839283911</phoneNumber>
+        <jobTitle>xsx</jobTitle>
+        <salary>333232.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>7631d4a9-371c-48f0-9396-613b5ce2af0f</id>
+        <name>isisi</name>
+        <phoneNumber>89384728391</phoneNumber>
+        <jobTitle>xsxaasaq</jobTitle>
+        <salary>83838.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>f6591485-7db4-441a-abee-27498cc96f43</id>
+        <name>ooow</name>
+        <phoneNumber>89382903922</phoneNumber>
+        <jobTitle>ppqpq</jobTitle>
+        <salary>26090.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>8dad1626-14d8-4e6f-8b12-95faca072654</id>
+        <name>pwnc</name>
+        <phoneNumber>89384194371</phoneNumber>
+        <jobTitle>soppox</jobTitle>
+        <salary>83922.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>a2ba15b1-21eb-4336-bd80-e35e1ae0e7e5</id>
+        <name>oeiwoidj</name>
+        <phoneNumber>84928391031</phoneNumber>
+        <jobTitle>xsaxx21</jobTitle>
+        <salary>21000.0</salary>
     </wrapper>
     <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
         <id>4</id>
@@ -62,5 +104,19 @@
         <phoneNumber>+7986574932</phoneNumber>
         <jobTitle>Строитель</jobTitle>
         <salary>67000.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>34</id>
+        <name>xsa</name>
+        <phoneNumber>84393948212</phoneNumber>
+        <jobTitle>xsa</jobTitle>
+        <salary>31333.0</salary>
+    </wrapper>
+    <wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="worker">
+        <id>59cc0438-ae80-43cc-9966-c55fd1801c66</id>
+        <name>xsaxxxs</name>
+        <phoneNumber>893746273821</phoneNumber>
+        <jobTitle>xsaxsa</jobTitle>
+        <salary>32767.0</salary>
     </wrapper>
 </wrapperXML>

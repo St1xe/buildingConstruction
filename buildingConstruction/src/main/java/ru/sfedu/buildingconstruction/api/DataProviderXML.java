@@ -39,12 +39,14 @@ public class DataProviderXML implements DataProvider {
         
     }
     
-    @Override
+   @Override
     public void preparationOfConstructionPlan(Building building, Client client, List<Material> materials, List<EngineeringSystem> systems) throws IOException {
         building.setMaterials(materials);
         building.setOwner(client);
         building.setEngineeringSystems(systems);
-        building.setId(UUID.randomUUID().toString());
+        if (building.getId() == null) {
+            building.setId(UUID.randomUUID().toString());
+        }
         addBuilding(building);
 
         log.info("id добавленного здания = " + building.getId());
@@ -52,81 +54,22 @@ public class DataProviderXML implements DataProvider {
     }
 
     @Override
-    public void preparationForBuilding(Building building) {
+    public void preparationForBuilding(Building building) throws IOException{
 
-        List<Worker> workers = new ArrayList<>();
-        List<ConstructionEquipment> equipments = new ArrayList<>();
+        List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_XML_FILE));
+        List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_XML_FILE));
+        LocalDate date = coordinationOfConstructionTerms(building);
 
-        try {
-            workers = getAllRecords(Worker.class, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
-        } catch (IOException ex) {
-            ex.getMessage();
-            System.exit(0);
-        }
-
-        try {
-            equipments = getAllRecords(ConstructionEquipment.class, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
-        } catch (IOException ex) {
-            ex.getMessage();
-            System.exit(0);
-        }
-
-        int coefficient = 0;
-        LocalDate date = LocalDate.now();
-
-        switch (building.getClass().getSimpleName()) {
-
-            case "ApartmentHouse" -> {
-                coefficient = 10;
-                date = LocalDate.now().plusMonths(6);
-            }
-            case "House" -> {
-                coefficient = 20;
-                date = LocalDate.now().plusYears(3);
-            }
-            case "Garage" -> {
-                coefficient = 5;
-                date = LocalDate.now().plusDays(15);
-            }
-
-        }
-
-        List<Worker> w = workers.stream().limit(coefficient / 5).toList();
-        List<ConstructionEquipment> ce = equipments.stream().limit(coefficient / 5).toList();
-
-        building.setWorkers(w);
-        building.setConstructionEquipments(ce);
+        building.setWorkers(workers);
+        building.setConstructionEquipments(equipments);
         building.setCompletionDate(date);
 
         try {
             updateBuilding(building.getId(), building);
         } catch (IOException ex) {
             log.error(ex.getMessage());
-            System.exit(1);
+            throw new IOException();
         }
-
-    }
-
-    @Override
-    public void calculationOfTheTotalCost(Building building) {
-
-        long sum = 0l;
-
-        switch (building.getClass().getSimpleName()) {
-
-            case "ApartmentHouse" -> {
-                sum = Constants.PRICE_TO_BUILD_AN_APARTMENT_HOUSE;
-            }
-            case "House" -> {
-                sum = Constants.PRICE_TO_BUILD_A_HOUSE;
-            }
-            case "Garage" -> {
-                sum = Constants.PRICE_TO_BUILD_A_GARAGE;
-            }
-
-        }
-        
-        log.info("Стоимотсь постройки дома = " + sum);
 
     }
 

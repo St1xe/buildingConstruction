@@ -61,8 +61,8 @@ public class DataProviderCSV implements DataProvider {
     @Override
     public void preparationForBuilding(Building building) throws IOException{
 
-        List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_WORKER_CSV_FILE);
-        List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE);
+        List<Worker> workers = distributionOfWorkers(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_WORKER_CSV_FILE));
+        List<ConstructionEquipment> equipments = distributionOfConstructionEquipment(building, Constants.PATH_TO_RESOURCES.concat(Constants.PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE));
         LocalDate date = coordinationOfConstructionTerms(building);
 
         building.setWorkers(workers);
