@@ -8,19 +8,19 @@ public class Constants {
 
     public static final String PATH = "config";
     public static final String ACTOR = "system";
-    
+
     public static final int PEOPLE_FOR_BUILD_A_GARAGE = 4;
     public static final int PEOPLE_FOR_BUILD_A_HOUSE = 6;
     public static final int PEOPLE_FOR_BUILD_AN_APARTMENT_HOUSE = 30;
-    
+
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_A_GARAGE = 5;
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_A_HOUSE = 7;
     public static final int NUMBER_OF_EQUIPMENT_FOR_BUILD_AN_APARTMENT_HOUSE = 15;
-    
+
     public static final int TIME_IN_MONTH_FOR_BUILD_AN_APARTMENT_HOUSE = 18;
     public static final int TIME_IN_MONTH_FOR_BUILD_A_HOUSE = 6;
     public static final int TIME_IN_MONTH_FOR_BUILD_A_GARAGE = 3;
-    
+
     public static final String MONGO_ID = "id";
     public static final String MONGO_CLASS_NAME = "className";
     public static final String MONGO_CREATED_DATA = "createdData";
@@ -28,7 +28,7 @@ public class Constants {
     public static final String MONGO_METHOD_NAME = "methodName";
     public static final String MONGO_STATUS = "status";
     public static final String MONGO_OBJECT = "Object";
-    
+
     public static final String ID = "id";
     public static final String NAME = "name";
     public static final String PHONE_NUMBER = "phoneNumber";
@@ -49,12 +49,12 @@ public class Constants {
     public static final String WORKERS_ID = "workersId";
     public static final String NUMBER_OF_ROOMS = "numberOfRooms";
     public static final String NUMBER_OF_CARS = "numberOfCars";
-    
+
     public static final String MONGO_DB_NAME = "MONGO_DB_NAME";
     public static final String MONGO_TABLE_NAME = "MONGO_TABLE_NAME";
     public static final String MONGO_URI = "MONGO_URI";
-    
-    public static final String PATH_TO_RESOURCES = "";
+
+    public static final String PATH_TO_RESOURCES = "src/main/resources/";
     public static final String DEFAULT_PROPERTY_CONFIG_PATH = "environment.properties";
     public static final String DEFAULT_XML_CONFIG_PATH = "environment.xml";
     public static final String DEFAULT_YAML_CONFIG_PATH = "environment.yml";
@@ -66,7 +66,7 @@ public class Constants {
     public static final String REGEX_TO_CHECK_PHONE_NUMBER = "\\+?[1-9]\\d{10}";
     public static final String REGEX_TO_CHECK_EMAIL = "((\\w)|(\\.)|(\\-))+\\@[a-z]+\\.[a-z]+";
     public static final String REGEX_TO_CHECK_PASSPORT = "\\d{4}\\s?\\d{6}";
-    
+
     public static final String PATH_TO_WORKER_CSV_FILE = "worker.csv";
     public static final String PATH_TO_MATERIAL_CSV_FILE = "material.csv";
     public static final String PATH_TO_CONSTRUCTION_EQUIPMENT_CSV_FILE = "constructionEquipment.csv";
@@ -224,7 +224,7 @@ public class Constants {
             + "constructionEquipmentsId = ?,"
             + "workersId = ?"
             + " WHERE id = ?";
-    
+
     public final static String UPDATE_HOUSE = "UPDATE house SET id=?,"
             + "numberOfRooms = ?,"
             + "square = ?,"
@@ -236,7 +236,7 @@ public class Constants {
             + "constructionEquipmentsId = ?,"
             + "workersId = ?"
             + " WHERE id = ?";
-    
+
     public final static String UPDATE_GARAGE = "UPDATE garage SET id=?,"
             + "numberOfCars = ?,"
             + "square = ?,"
@@ -248,16 +248,55 @@ public class Constants {
             + "constructionEquipmentsId = ?,"
             + "workersId = ?"
             + " WHERE id = ?";
-    
+
     public static final String WORKER_TABLE = "worker";
-    public static final String CONSTRUCTION_EQUIPMENT_TABLE = "constructionEquipment";
+    public static final String CONSTRUCTION_EQUIPMENT_TABLE = "constructionequipment";
     public static final String MATERIAL_TABLE = "material";
     public static final String CLIENT_TABLE = "client";
-    public static final String APARTMENT_HOUSE_TABLE = "apartmentHouse";
+    public static final String APARTMENT_HOUSE_TABLE = "apartmenthouse";
     public static final String HOUSE_TABLE = "house";
     public static final String GARAGE_TABLE = "garage";
-    
+
     public static final String SELECT_ALL_FROM = "SELECT * FROM ";
+
+    public static final String SELECT_ALL_TABLES_FROM_DB = "SELECT table_name\n"
+            + "FROM information_schema.tables\n"
+            + "WHERE table_schema = 'public'";
+
+    public static final String SELECT_ALL_ROLES_FROM_DB = "SELECT usename FROM pg_catalog.pg_user";
+    public static final String SELECT_CURRENT_DB = "SELECT current_catalog";
+
+    public static final String SELECT_COLUMN_NAME_FROM_WORKER_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'worker';";
     
+    public static final String SELECT_COLUMN_NAME_FROM_CONSTRUCTION_EQUIPMENT_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'constructionequipment';";
+    
+    public static final String SELECT_COLUMN_NAME_FROM_MATERIAL_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'material';";
+    
+    public static final String SELECT_COLUMN_NAME_FROM_CLIENT_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'CLIENT';";
+    
+    public static final String SELECT_COLUMN_NAME_FROM_APARTMENT_HOUSE_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'apartmenthouse';";
+  
+    public static final String SELECT_COLUMN_NAME_FROM_HOUSE_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'house';";
+  
+    public static final String SELECT_COLUMN_NAME_FROM_GARAGE_TABLE = "select column_name \n"
+            + "from information_schema.columns \n"
+            + "where table_schema='public' and table_name = 'garage';";
+    
+    public static final String CURRENT_DB = "databaseprovider";
+  
+
+    public static final String HIBERNATE_CONFIG = "HIBERNATE_CONFIG";
 
 }
