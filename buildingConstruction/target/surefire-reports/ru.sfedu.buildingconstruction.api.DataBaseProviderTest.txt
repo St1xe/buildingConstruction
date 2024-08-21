@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: ru.sfedu.buildingconstruction.api.DataBaseProviderTest
--------------------------------------------------------------------------------
-Tests run: 103, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.815 s - in ru.sfedu.buildingconstruction.api.DataBaseProviderTest

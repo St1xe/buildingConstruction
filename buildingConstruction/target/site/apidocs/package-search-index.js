@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.sfedu.buildingconstruction"},{"l":"ru.sfedu.buildingconstruction.api"},{"l":"ru.sfedu.buildingconstruction.model"},{"l":"ru.sfedu.buildingconstruction.util"}];updateSearchResults();

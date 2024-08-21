@@ -1,0 +1,11 @@
+logs/
+nbproject/
+target/
+
+*.csv
+*.xml
+*.jar
+*.yml
+
+!*.cfg.xml
+!/pom.xml
